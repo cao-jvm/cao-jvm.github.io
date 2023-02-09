@@ -1,294 +1,584 @@
 
+
+
+
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>我的第一篇文章 | Hexo</title>
-        <meta name="author" content="John Doe">
-        <meta name="description" content="">
-        <meta name="keywords" content="">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
-        <link rel="icon" href="/images/avatar.jpg">
-        <script src="https://cdn.staticfile.org/vue/3.2.45/vue.global.prod.min.js"></script>
-        <script src="https://cdn.staticfile.org/highlight.js/11.7.0/highlight.min.js"></script>
-        <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/11.7.0/styles/github.min.css">
-        <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/6.2.1/css/all.min.css">
-        
-        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-        
-        
-        
-        <link rel="stylesheet" href="/css/fonts.min.css">
-        <link rel="stylesheet" href="/css/particlex.css">
-    <meta name="generator" content="Hexo 6.3.0"></head>
-    <body>
-        <div id="loading" style="height: 100vh; width: 100vw; left: 0; top: 0; position: fixed; display: flex; z-index: 2147483647; background: #fff; transition: opacity 0.3s ease-out; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; pointer-events: none">
-    <div style="width: 50vmin; height: 50vmin; margin: auto; padding: 50px; border-radius: 50%; display: flex; border: solid 10px #a3ddfb">
-        <div style="margin: auto; text-align: center">
-            <h2>LOADING</h2>
-            <p>加载过慢请开启缓存，浏览器默认开启</p>
-            <img src="/images/loading.gif" style="height: 50px; border-radius: 0">
-        </div>
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="Hexo" href="http://example.com/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="Hexo" href="http://example.com/atom.xml" />
+<link rel="alternate" type="application/json" title="Hexo" href="http://example.com/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+  <meta name="keywords" content="Hexo" />
+
+
+<link rel="canonical" href="http://example.com/2023/02/06/Hexo%E6%92%AD%E5%AE%A2%E6%90%AD%E5%BB%BA/">
+
+
+
+  <title>
+我的第一篇文章 - 教程 |
+Caoy = Hexo</title>
+<meta name="generator" content="Hexo 6.3.0"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
     </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">我的第一篇文章
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="创建时间：2023-02-06 22:03:24">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">发表于</span>
+    <time itemprop="dateCreated datePublished" datetime="2023-02-06T22:03:24+08:00">2023-02-06</time>
+  </span>
+  <span class="item" title="本文字数">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span class="text">本文字数</span>
+    <span>1.2k</span>
+    <span class="text">字</span>
+  </span>
+  <span class="item" title="阅读时长">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span class="text">阅读时长</span>
+    <span>1 分钟</span>
+  </span>
 </div>
 
-        <div id="layout">
-            <transition name="into">
-            <div id="main" v-show="showpage" style="display: -not-none">
-                <nav id="menu">
-    <div class="desktop-menu">
-        <a class="title" href="/">
-            <span>HEXO</span>
-        </a>
-        
-        <a href="/">
-            <i class="fa-solid fa-house fa-fw"></i>
-            <span>&ensp;Home</span>
-        </a>
-        
-        <a href="/about">
-            <i class="fa-solid fa-id-card fa-fw"></i>
-            <span>&ensp;About</span>
-        </a>
-        
-        <a href="/archives">
-            <i class="fa-solid fa-box-archive fa-fw"></i>
-            <span>&ensp;Archives</span>
-        </a>
-        
-        <a href="/categories">
-            <i class="fa-solid fa-bookmark fa-fw"></i>
-            <span>&ensp;Categories</span>
-        </a>
-        
-        <a href="/tags">
-            <i class="fa-solid fa-tags fa-fw"></i>
-            <span>&ensp;Tags</span>
-        </a>
-        
-    </div>
-    <div :class="&quot;phone-menu &quot; + menushow" id="phone-menu">
-        <div class="curtain" @click="menushow = !menushow" v-show="menushow"></div>
-        <div class="title" @click="menushow = !menushow">
-            <i class="fa-solid fa-bars fa-fw"></i>
-            <span>&emsp;HEXO</span>
+
+          </div>
         </div>
-        <transition name="slide">
-        <div class="items" v-show="menushow">
-            
-            <a href="/">
-                <div class="item">
-                    <div style="min-width: 20px; max-width: 50px; width: 10%">
-                        <i class="fa-solid fa-house fa-fw"></i>
-                    </div>
-                    <div style="min-width: 100px; max-width: 150%; width: 20%">Home</div>
-                </div>
-            </a>
-            
-            <a href="/about">
-                <div class="item">
-                    <div style="min-width: 20px; max-width: 50px; width: 10%">
-                        <i class="fa-solid fa-id-card fa-fw"></i>
-                    </div>
-                    <div style="min-width: 100px; max-width: 150%; width: 20%">About</div>
-                </div>
-            </a>
-            
-            <a href="/archives">
-                <div class="item">
-                    <div style="min-width: 20px; max-width: 50px; width: 10%">
-                        <i class="fa-solid fa-box-archive fa-fw"></i>
-                    </div>
-                    <div style="min-width: 100px; max-width: 150%; width: 20%">Archives</div>
-                </div>
-            </a>
-            
-            <a href="/categories">
-                <div class="item">
-                    <div style="min-width: 20px; max-width: 50px; width: 10%">
-                        <i class="fa-solid fa-bookmark fa-fw"></i>
-                    </div>
-                    <div style="min-width: 100px; max-width: 150%; width: 20%">Categories</div>
-                </div>
-            </a>
-            
-            <a href="/tags">
-                <div class="item">
-                    <div style="min-width: 20px; max-width: 50px; width: 10%">
-                        <i class="fa-solid fa-tags fa-fw"></i>
-                    </div>
-                    <div style="min-width: 100px; max-width: 150%; width: 20%">Tags</div>
-                </div>
-            </a>
-            
-        </div>
-        </transition>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="切换导航栏">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
     </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">Caoy</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
 </nav>
 
-                <div class="article">
-    <div>
-        <h1>我的第一篇文章 </h1>
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclffsa1cj20zk0m811l.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giph4fomxoj20zk0m8axp.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclh3brzpj20zk0m8ann.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipesng5oej20zk0m87d4.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicitcxhpij20zk0m8hdt.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicliierfjj20zk0m8npd.jpg"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
     </div>
-    <div class="info">
-        <span class="date">
-            <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
-            </span>
-            2023/2/6
-        </span>
-        
-        <span class="category">
-            <a href="/categories/%E6%95%99%E7%A8%8B/">
-                <span class="icon">
-                    <i class="fa-solid fa-bookmark fa-fw"></i>
-                </span>
-                教程
-            </a>
-        </span>
-        
-        
-        <span class="tags">
-            <span class="icon">
-                <i class="fa-solid fa-tags fa-fw"></i>
-            </span>
-            
-            <span class="tag">
-                
-                <a href="/tags/Hexo/" style="color: #ffa2c4">Hexo</a>
-            </span>
-            
-        </span>
-        
-    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
     
-    <div class="content" v-pre>
-        <h1 id="Hexo博客搭建教程"><a href="#Hexo博客搭建教程" class="headerlink" title="Hexo博客搭建教程"></a>Hexo博客搭建教程</h1><h2 id="第一步-安装软件"><a href="#第一步-安装软件" class="headerlink" title="第一步: 安装软件"></a>第一步: 安装软件</h2><ol>
-<li>安装git(省略)</li>
-<li>安装node(省略)</li>
-</ol>
-<h2 id="第二步-软件安装完准备环境"><a href="#第二步-软件安装完准备环境" class="headerlink" title="第二步: 软件安装完准备环境"></a>第二步: 软件安装完准备环境</h2><ol>
-<li><p>node环境变量</p>
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">首页</a></span><i class="ic i-angle-right"></i>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/%E6%95%99%E7%A8%8B/" itemprop="item" rel="index" title="分类于 教程"><span itemprop="name">教程</span></a>
+<meta itemprop="position" content="1" /></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="en">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2023/02/06/Hexo%E6%92%AD%E5%AE%A2%E6%90%AD%E5%BB%BA/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/avatar.jpg">
+    <meta itemprop="name" content="John Doe">
+    <meta itemprop="description" content=", ">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Hexo">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <h1 id="hexo博客搭建教程"><a class="markdownIt-Anchor" href="#hexo博客搭建教程">#</a> Hexo 博客搭建教程</h1>
+<h2 id="第一步-安装软件"><a class="markdownIt-Anchor" href="#第一步-安装软件">#</a> 第一步：安装软件</h2>
 <ol>
-<li>在node安装目录下新建node_global,node_cache文件夹</li>
+<li>安装 git (省略)</li>
+<li>安装 node (省略)</li>
 </ol>
-<p><img src="https://raw.githubusercontent.com/cao-jvm/picbed/master/picgo/image-20230206165200415.png" alt="image-20230206165200415"></p>
+<h2 id="第二步-软件安装完准备环境"><a class="markdownIt-Anchor" href="#第二步-软件安装完准备环境">#</a> 第二步：软件安装完准备环境</h2>
+<ol>
+<li>
+<p>node 环境变量</p>
+<ol>
+<li>在 node 安装目录下新建 node_global,node_cache 文件夹</li>
+</ol>
+<p><img data-src="https://raw.githubusercontent.com/cao-jvm/picbed/master/picgo/image-20230206165200415.png" alt="image-20230206165200415"></p>
 <ol start="2">
 <li>新建系统环境变量</li>
 </ol>
-<p><img src="https://raw.githubusercontent.com/cao-jvm/picbed/master/picgo/image-20230206165259142.png" alt="image-20230206165259142"></p>
+<p><img data-src="https://raw.githubusercontent.com/cao-jvm/picbed/master/picgo/image-20230206165259142.png" alt="image-20230206165259142"></p>
 <ol start="3">
-<li>用户变量path添加</li>
+<li>用户变量 path 添加</li>
 </ol>
-<p><img src="https://raw.githubusercontent.com/cao-jvm/picbed/master/picgo/image-20230206165346037.png" alt="image-20230206165346037"></p>
+<p><img data-src="https://raw.githubusercontent.com/cao-jvm/picbed/master/picgo/image-20230206165346037.png" alt="image-20230206165346037"></p>
 </li>
-<li><p>更改缓存文件和模块默认存放位置</p>
-<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">npm</span> config set prefix <span class="string">&quot;node_global文件的路径&quot;</span></span><br><span class="line">npm config set cache <span class="string">&quot;node_cache文件的路径&quot;</span></span><br><span class="line">例如: npm config set prefix <span class="string">&quot;D:\softlist\nodejs\node_global&quot;</span></span><br></pre></td></tr></table></figure>
-
-
-</li>
-<li><p>node修改为淘宝镜像源</p>
-<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">全局安装cnpm工具</span><br><span class="line"><span class="attribute">npm</span> install -g cnpm</span><br><span class="line">//设置淘宝镜像</span><br><span class="line">npm config set registry https://registry.npm.taobao.org</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+<li>
+<p>更改缓存文件和模块默认存放位置</p>
+<figure class="highlight nginx"><figcaption data-lang="nginx"></figcaption><table><tr><td data-num="1"></td><td><pre>npm config set prefix "node_global文件的路径"</pre></td></tr><tr><td data-num="2"></td><td><pre>npm config set cache "node_cache文件的路径"</pre></td></tr><tr><td data-num="3"></td><td><pre>例如: npm config set prefix "D:\softlist\nodejs\node_global"</pre></td></tr></table></figure></li>
+<li>
+<p>node 修改为淘宝镜像源</p>
+<figure class="highlight nginx"><figcaption data-lang="nginx"></figcaption><table><tr><td data-num="1"></td><td><pre>全局安装cnpm工具</pre></td></tr><tr><td data-num="2"></td><td><pre>npm install -g cnpm</pre></td></tr><tr><td data-num="3"></td><td><pre>//设置淘宝镜像</pre></td></tr><tr><td data-num="4"></td><td><pre>npm config set registry https://registry.npm.taobao.org</pre></td></tr></table></figure></li>
 </ol>
-<h2 id="第三步-cnpm安装hexo"><a href="#第三步-cnpm安装hexo" class="headerlink" title="第三步: cnpm安装hexo"></a>第三步: cnpm安装hexo</h2>   <figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">cnpm</span> install -g hexo-cli</span><br></pre></td></tr></table></figure>
-
-<p>   <img src="https://raw.githubusercontent.com/cao-jvm/picbed/master/picgo/image-20230206184704789.png" alt="image-20230206184704789"></p>
-<p>​		安装完后可以用<code>hexo -v</code>查看安装情况</p>
-<h2 id="第四步-创建博客目录"><a href="#第四步-创建博客目录" class="headerlink" title="第四步:创建博客目录"></a>第四步:创建博客目录</h2><ol>
-<li><p>新建一个blog目录,并进入到该目录下</p>
-<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">mkdir</span> MyBlog</span><br><span class="line">cd MyBlog</span><br></pre></td></tr></table></figure>
+<h2 id="第三步-cnpm安装hexo"><a class="markdownIt-Anchor" href="#第三步-cnpm安装hexo">#</a> 第三步: cnpm 安装 hexo</h2>
+<figure class="highlight nginx"><figcaption data-lang="nginx"></figcaption><table><tr><td data-num="1"></td><td><pre>cnpm install -g hexo-cli</pre></td></tr></table></figure><p><img data-src="https://raw.githubusercontent.com/cao-jvm/picbed/master/picgo/image-20230206184704789.png" alt="image-20230206184704789"></p>
+<p>​		安装完后可以用 <code>hexo -v</code>  查看安装情况</p>
+<h2 id="第四步创建博客目录"><a class="markdownIt-Anchor" href="#第四步创建博客目录">#</a> 第四步：创建博客目录</h2>
+<ol>
+<li>
+<p>新建一个 blog 目录，并进入到该目录下</p>
+<figure class="highlight nginx"><figcaption data-lang="nginx"></figcaption><table><tr><td data-num="1"></td><td><pre>mkdir MyBlog</pre></td></tr><tr><td data-num="2"></td><td><pre>cd MyBlog</pre></td></tr></table></figure></li>
+<li>
+<p>初始化一个博客</p>
+<figure class="highlight nginx"><figcaption data-lang="nginx"></figcaption><table><tr><td data-num="1"></td><td><pre>//在刚刚创建的目录下执行该命令</pre></td></tr><tr><td data-num="2"></td><td><pre>hexo init</pre></td></tr></table></figure></li>
+<li>
+<p>启动博客预览</p>
+<figure class="highlight nginx"><figcaption data-lang="nginx"></figcaption><table><tr><td data-num="1"></td><td><pre>hexo s</pre></td></tr><tr><td data-num="2"></td><td><pre>//s=server</pre></td></tr></table></figure></li>
+<li>
+<p>复制启动后的地址到浏览器打开</p>
+<p><img data-src="https://raw.githubusercontent.com/cao-jvm/picbed/master/picgo/image-20230206205253052.png" alt="image-20230206205253052"></p>
 </li>
-<li><p>初始化一个博客</p>
-<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">//在刚刚创建的目录下执行该命令</span><br><span class="line"><span class="attribute">hexo</span> init</span><br></pre></td></tr></table></figure>
+<li>
+<p>新建一篇文章</p>
+<figure class="highlight nginx"><figcaption data-lang="nginx"></figcaption><table><tr><td data-num="1"></td><td><pre>hexo n "我的第一篇文章"</pre></td></tr><tr><td data-num="2"></td><td><pre>//n的意思是new</pre></td></tr></table></figure><p><img data-src="https://raw.githubusercontent.com/cao-jvm/picbed/master/picgo/image-20230206194149327.png" alt="image-20230206194149327"><br>
+ 进入到文章所在的位置，\source_posts, 编辑文章内容</p>
 </li>
-<li><p>启动博客预览</p>
-<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">hexo</span> s</span><br><span class="line">//s=server</span><br></pre></td></tr></table></figure>
+<li>
+<p>清理缓存并重新生成</p>
+<pre><code>hexo c
+//c = clean
+</code></pre>
+<pre><code>hexo g
+//g = generate
+</code></pre>
+<p><img data-src="https://raw.githubusercontent.com/cao-jvm/picbed/master/picgo/image-20230206205102586.png" alt="image-20230206205102586"></p>
 </li>
-<li><p>复制启动后的地址到浏览器打开</p>
-<p><img src="https://raw.githubusercontent.com/cao-jvm/picbed/master/picgo/image-20230206205253052.png" alt="image-20230206205253052"></p>
-</li>
-<li><p>新建一篇文章</p>
-<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">hexo</span> n <span class="string">&quot;我的第一篇文章&quot;</span></span><br><span class="line">//n的意思是new</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://raw.githubusercontent.com/cao-jvm/picbed/master/picgo/image-20230206194149327.png" alt="image-20230206194149327"><br>进入到文章所在的位置,\source_posts,编辑文章内容</p>
-</li>
-<li><p>清理缓存并重新生成</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo c</span><br><span class="line">//c = clean</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">//g = generate</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://raw.githubusercontent.com/cao-jvm/picbed/master/picgo/image-20230206205102586.png" alt="image-20230206205102586"></p>
-</li>
-<li><p>启动重新生成的网站</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br><span class="line">//s = server</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://raw.githubusercontent.com/cao-jvm/picbed/master/picgo/image-20230206205253052.png" alt="image-20230206205253052"></p>
-<p><img src="https://raw.githubusercontent.com/cao-jvm/picbed/master/picgo/image-20230206210528181.png" alt="image-20230206210528181"></p>
-</li>
-</ol>
-<h2 id="第五步-部署博客"><a href="#第五步-部署博客" class="headerlink" title="第五步:部署博客"></a>第五步:部署博客</h2><ol>
-<li><p>我们不能一直在本地看对吧,所以我们可以免费部署到github上</p>
-</li>
-<li><p>进入github官网,新建仓库,仓库名字必须符合规则,你的github昵称+github.io,然后点击create创建</p>
-<p><img src="https://raw.githubusercontent.com/cao-jvm/picbed/master/picgo/image-20230206212201619.png" alt="image-20230206212201619"></p>
-</li>
-<li><p>上传文件到github仓库</p>
-<p>用管理员权限打开git bash窗口</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//进入到你的博客目录下</span><br><span class="line"><span class="built_in">cd</span> 博客目录下</span><br><span class="line">//进入到生成博客网站的目录</span><br><span class="line"><span class="built_in">cd</span> public</span><br></pre></td></tr></table></figure>
-
-<p>执行下列操作</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">//初始化一个仓库</span><br><span class="line">git init</span><br><span class="line">//添加当前目录下的所有文件</span><br><span class="line">git add .</span><br><span class="line">//提交到本地分支</span><br><span class="line">git commit -m <span class="string">&quot;first commit&quot;</span></span><br><span class="line">//把已存在的分子master改名为main,因为现在github仓库默认的主分支名字就是main</span><br><span class="line">git branch -M main</span><br><span class="line">//连接远程仓库并设置别名originblog</span><br><span class="line">git remote add originblog https://github.com/cao-jvm/cao-jvm.github.io.git</span><br><span class="line">//将本地内容推送到远程仓库</span><br><span class="line">git push -u origin main</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://raw.githubusercontent.com/cao-jvm/picbed/master/picgo/image-20230206215346152.png" alt="image-20230206215346152"></p>
-</li>
-<li><p>上传完毕后访问网站</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://cao-jvm.github.io/</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://raw.githubusercontent.com/cao-jvm/picbed/master/picgo/image-20230206215407210.png" alt="image-20230206215407210"></p>
-</li>
-<li><p>当然了,这个只是最基本的搭建一个博客网站,主题是默认的,当然也是可以选择更加花里胡哨的主题,下篇文章再说</p>
+<li>
+<p>启动重新生成的网站</p>
+<pre><code>hexo s
+//s = server
+</code></pre>
+<p><img data-src="https://raw.githubusercontent.com/cao-jvm/picbed/master/picgo/image-20230206205253052.png" alt="image-20230206205253052"></p>
+<p><img data-src="https://raw.githubusercontent.com/cao-jvm/picbed/master/picgo/image-20230206210528181.png" alt="image-20230206210528181"></p>
 </li>
 </ol>
+<h2 id="第五步部署博客"><a class="markdownIt-Anchor" href="#第五步部署博客">#</a> 第五步：部署博客</h2>
+<ol>
+<li>
+<p>我们不能一直在本地看对吧，所以我们可以免费部署到 github 上</p>
+</li>
+<li>
+<p>进入 github 官网，新建仓库，仓库名字必须符合规则，<span class="exturl" data-url="aHR0cDovL3huLS1naXRodWIrZ2l0aHViLTIwNHU3MDd4bnNzY3lmbS5pbw=="> 你的 github 昵称 + github.io</span>, 然后点击 create 创建</p>
+<p><img data-src="https://raw.githubusercontent.com/cao-jvm/picbed/master/picgo/image-20230206212201619.png" alt="image-20230206212201619"></p>
+</li>
+<li>
+<p>上传文件到 github 仓库</p>
+<p>用管理员权限打开 git bash 窗口</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>//进入到你的博客目录下</pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token builtin class-name">cd</span> 博客目录下</pre></td></tr><tr><td data-num="3"></td><td><pre>//进入到生成博客网站的目录</pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token builtin class-name">cd</span> public</pre></td></tr></table></figure><p>执行下列操作</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>//初始化一个仓库</pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token function">git</span> init</pre></td></tr><tr><td data-num="3"></td><td><pre>//添加当前目录下的所有文件</pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span></pre></td></tr><tr><td data-num="5"></td><td><pre>//提交到本地分支</pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token function">git</span> commit <span class="token parameter variable">-m</span> <span class="token string">"first commit"</span></pre></td></tr><tr><td data-num="7"></td><td><pre>//把已存在的分子master改名为main,因为现在github仓库默认的主分支名字就是main</pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token function">git</span> branch <span class="token parameter variable">-M</span> main</pre></td></tr><tr><td data-num="9"></td><td><pre>//连接远程仓库并设置别名originblog</pre></td></tr><tr><td data-num="10"></td><td><pre><span class="token function">git</span> remote <span class="token function">add</span> originblog https://github.com/cao-jvm/cao-jvm.github.io.git</pre></td></tr><tr><td data-num="11"></td><td><pre>//将本地内容推送到远程仓库</pre></td></tr><tr><td data-num="12"></td><td><pre><span class="token function">git</span> push <span class="token parameter variable">-u</span> origin main</pre></td></tr></table></figure><p><img data-src="https://raw.githubusercontent.com/cao-jvm/picbed/master/picgo/image-20230206215346152.png" alt="image-20230206215346152"></p>
+</li>
+<li>
+<p>上传完毕后访问网站</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>https://cao-jvm.github.io/</pre></td></tr></table></figure><p><img data-src="https://raw.githubusercontent.com/cao-jvm/picbed/master/picgo/image-20230206215407210.png" alt="image-20230206215407210"></p>
+</li>
+<li>
+<p>当然了，这个只是最基本的搭建一个博客网站，主题是默认的，当然也是可以选择更加花里胡哨的主题，下篇文章再说</p>
+</li>
+</ol>
 
-    </div>
-    
-    
-    
-    
-    
-    
-    
+      <div class="tags">
+          <a href="/tags/Hexo/" rel="tag"><i class="ic i-tag"></i> Hexo</a>
+      </div>
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">更新于</span>
+    <time title="修改时间：2023-02-09 17:07:12" itemprop="dateModified" datetime="2023-02-09T17:07:12+08:00">2023-02-09</time>
+  </span>
 </div>
 
-                <footer id="footer">
-    <div class="footer-wrap">
-        <div>
-            &copy;
-            2022 - 2023 Hexo
-            <span class="footer-icon">
-                <i class="fa-solid fa-font-awesome fa-fw"></i>
-            </span>
-            &commat;John Doe
-        </div>
-        <div>Based on the <a target="_blank" rel="noopener" href="https://hexo.io">Hexo Engine</a> &amp; <a target="_blank" rel="noopener" href="https://github.com/argvchs/hexo-theme-particlex">ParticleX Theme</a></div>
-        
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> 赞赏</button>
+  <p>请我喝[茶]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="John Doe 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="John Doe 支付宝">
+        <p>支付宝</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/paypal.png" alt="John Doe 贝宝">
+        <p>贝宝</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>Post author： </strong>John Doe <i class="ic i-at"><em>@</em></i>Hexo
+  </li>
+  <li class="link">
+    <strong>Post link：</strong>
+    <a href="http://example.com/2023/02/06/Hexo%E6%92%AD%E5%AE%A2%E6%90%AD%E5%BB%BA/" title="我的第一篇文章">http://example.com/2023/02/06/Hexo播客搭建/</a>
+  </li>
+  <li class="license">
+    <strong>Copyright Notice： </strong>All articles in this blog are licensed under <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/2023/02/03/Linux/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipeun65urj20zk0m81ii.jpg" title="Linux操作系统期末复习">
+  <span class="type">上一篇</span>
+  <span class="category"><i class="ic i-flag"></i> 新余学院第一学期复习</span>
+  <h3>Linux操作系统期末复习</h3>
+  </a>
+
     </div>
-</footer>
+    <div class="item right">
+    </div>
+</div>
 
-            </div>
-            </transition>
-            <div id="showimg">
-                <img id="showimg-content">
-            </div>
+  
+  <div class="wrap" id="comments"></div>
+
+
         </div>
-        <script src="/js/functions.js"></script>
-<script src="/js/particlex.js"></script>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B"><span class="toc-number">1.</span> <span class="toc-text"> Hexo 博客搭建教程</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E6%AD%A5-%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6"><span class="toc-number">1.1.</span> <span class="toc-text"> 第一步：安装软件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E6%AD%A5-%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85%E5%AE%8C%E5%87%86%E5%A4%87%E7%8E%AF%E5%A2%83"><span class="toc-number">1.2.</span> <span class="toc-text"> 第二步：软件安装完准备环境</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E6%AD%A5-cnpm%E5%AE%89%E8%A3%85hexo"><span class="toc-number">1.3.</span> <span class="toc-text"> 第三步: cnpm 安装 hexo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E6%AD%A5%E5%88%9B%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%9B%AE%E5%BD%95"><span class="toc-number">1.4.</span> <span class="toc-text"> 第四步：创建博客目录</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E6%AD%A5%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2"><span class="toc-number">1.5.</span> <span class="toc-text"> 第五步：部署博客</span></a></li></ol></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="系列文章">
+        <ul>
+          <li class="active"><a href="/2023/02/06/Hexo%E6%92%AD%E5%AE%A2%E6%90%AD%E5%BB%BA/" rel="bookmark" title="我的第一篇文章">我的第一篇文章</a></li>
+        </ul>
+      </div>
+      <div class="overview panel" data-title="站点概览">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="John Doe"
+      data-src="/images/avatar.jpg">
+  <p class="name" itemprop="name">John Doe</p>
+  <div class="description" itemprop="description"></div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">4</span>
+        <span class="name">文章</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">2</span>
+        <span class="name">分类</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">2</span>
+        <span class="name">标签</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/about/" rel="section"><i class="ic i-user"></i>关于</a>
+  </li>
+
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-feather"></i>Posts</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>Archives</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>Categories</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>Tags</a>
+  </li>
+
+  </ul>
+    
+  <li class="item">
+    <a href="/friends/" rel="section"><i class="ic i-heart"></i>友達</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/links/" rel="section"><i class="ic i-magic"></i>链接</a>
+  </li>
+
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>随机文章</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E6%96%B0%E4%BD%99%E5%AD%A6%E9%99%A2%E7%AC%AC%E4%B8%80%E5%AD%A6%E6%9C%9F%E5%A4%8D%E4%B9%A0/" title="分类于 新余学院第一学期复习">新余学院第一学期复习</a>
+</div>
+
+    <span><a href="/2023/02/01/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%8E%9F%E7%90%86/" title="操作系统原理期末复习">操作系统原理期末复习</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E6%96%B0%E4%BD%99%E5%AD%A6%E9%99%A2%E7%AC%AC%E4%B8%80%E5%AD%A6%E6%9C%9F%E5%A4%8D%E4%B9%A0/" title="分类于 新余学院第一学期复习">新余学院第一学期复习</a>
+</div>
+
+    <span><a href="/2023/02/03/Linux/" title="Linux操作系统期末复习">Linux操作系统期末复习</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E6%95%99%E7%A8%8B/" title="分类于 教程">教程</a>
+</div>
+
+    <span><a href="/2023/02/06/Hexo%E6%92%AD%E5%AE%A2%E6%90%AD%E5%BB%BA/" title="我的第一篇文章">我的第一篇文章</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E6%96%B0%E4%BD%99%E5%AD%A6%E9%99%A2%E7%AC%AC%E4%B8%80%E5%AD%A6%E6%9C%9F%E5%A4%8D%E4%B9%A0/" title="分类于 新余学院第一学期复习">新余学院第一学期复习</a>
+</div>
+
+    <span><a href="/2023/02/02/%E8%BD%AF%E4%BB%B6%E6%96%87%E6%A1%A3%E4%B8%8E%E5%86%99%E4%BD%9C%E5%A4%8D%E4%B9%A0/" title="软件写作期末复习">软件写作期末复习</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>最新评论</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2010 – 
+    <span itemprop="copyrightYear">2023</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">John Doe @ Caoy</span>
+  </div>
+  <div class="count">
+    <span class="post-meta-item-icon">
+      <i class="ic i-chart-area"></i>
+    </span>
+    <span title="站点总字数">36k 字</span>
+
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="ic i-coffee"></i>
+    </span>
+    <span title="站点阅读时长">32 分钟</span>
+  </div>
+  <div class="powered-by">
+    基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: '2023/02/06/Hexo播客搭建/',
+    favicon: {
+      show: "（●´3｀●）Goooood",
+      hide: "(´Д｀)Booooom"
+    },
+    search : {
+      placeholder: "文章搜索",
+      empty: "关于 「 ${query} 」，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    valine: true,fancybox: true,
+    copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
 
 
 
 
-
-
-
-    </body>
+</body>
 </html>

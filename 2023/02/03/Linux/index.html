@@ -1,169 +1,179 @@
 
+
+
+
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Linux操作系统期末复习 | Hexo</title>
-        <meta name="author" content="John Doe">
-        <meta name="description" content="">
-        <meta name="keywords" content="">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
-        <link rel="icon" href="/images/avatar.jpg">
-        <script src="https://cdn.staticfile.org/vue/3.2.45/vue.global.prod.min.js"></script>
-        <script src="https://cdn.staticfile.org/highlight.js/11.7.0/highlight.min.js"></script>
-        <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/11.7.0/styles/github.min.css">
-        <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/6.2.1/css/all.min.css">
-        
-        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-        
-        
-        
-        <link rel="stylesheet" href="/css/fonts.min.css">
-        <link rel="stylesheet" href="/css/particlex.css">
-    <meta name="generator" content="Hexo 6.3.0"></head>
-    <body>
-        <div id="loading" style="height: 100vh; width: 100vw; left: 0; top: 0; position: fixed; display: flex; z-index: 2147483647; background: #fff; transition: opacity 0.3s ease-out; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; pointer-events: none">
-    <div style="width: 50vmin; height: 50vmin; margin: auto; padding: 50px; border-radius: 50%; display: flex; border: solid 10px #a3ddfb">
-        <div style="margin: auto; text-align: center">
-            <h2>LOADING</h2>
-            <p>加载过慢请开启缓存，浏览器默认开启</p>
-            <img src="/images/loading.gif" style="height: 50px; border-radius: 0">
-        </div>
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="Hexo" href="http://example.com/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="Hexo" href="http://example.com/atom.xml" />
+<link rel="alternate" type="application/json" title="Hexo" href="http://example.com/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
+
+  
+  <meta name="keywords" content="复习" />
+
+
+<link rel="canonical" href="http://example.com/2023/02/03/Linux/">
+
+
+
+  <title>
+Linux操作系统期末复习 - 新余学院第一学期复习 |
+Caoy = Hexo</title>
+<meta name="generator" content="Hexo 6.3.0"></head>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
+      </div>
     </div>
+  </div>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">Linux操作系统期末复习
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="创建时间：2023-02-03 08:14:40">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">发表于</span>
+    <time itemprop="dateCreated datePublished" datetime="2023-02-03T08:14:40+08:00">2023-02-03</time>
+  </span>
+  <span class="item" title="本文字数">
+    <span class="icon">
+      <i class="ic i-pen"></i>
+    </span>
+    <span class="text">本文字数</span>
+    <span>14k</span>
+    <span class="text">字</span>
+  </span>
+  <span class="item" title="阅读时长">
+    <span class="icon">
+      <i class="ic i-clock"></i>
+    </span>
+    <span class="text">阅读时长</span>
+    <span>13 分钟</span>
+  </span>
 </div>
 
-        <div id="layout">
-            <transition name="into">
-            <div id="main" v-show="showpage" style="display: -not-none">
-                <nav id="menu">
-    <div class="desktop-menu">
-        <a class="title" href="/">
-            <span>HEXO</span>
-        </a>
-        
-        <a href="/">
-            <i class="fa-solid fa-house fa-fw"></i>
-            <span>&ensp;Home</span>
-        </a>
-        
-        <a href="/about">
-            <i class="fa-solid fa-id-card fa-fw"></i>
-            <span>&ensp;About</span>
-        </a>
-        
-        <a href="/archives">
-            <i class="fa-solid fa-box-archive fa-fw"></i>
-            <span>&ensp;Archives</span>
-        </a>
-        
-        <a href="/categories">
-            <i class="fa-solid fa-bookmark fa-fw"></i>
-            <span>&ensp;Categories</span>
-        </a>
-        
-        <a href="/tags">
-            <i class="fa-solid fa-tags fa-fw"></i>
-            <span>&ensp;Tags</span>
-        </a>
-        
-    </div>
-    <div :class="&quot;phone-menu &quot; + menushow" id="phone-menu">
-        <div class="curtain" @click="menushow = !menushow" v-show="menushow"></div>
-        <div class="title" @click="menushow = !menushow">
-            <i class="fa-solid fa-bars fa-fw"></i>
-            <span>&emsp;HEXO</span>
+
+          </div>
         </div>
-        <transition name="slide">
-        <div class="items" v-show="menushow">
-            
-            <a href="/">
-                <div class="item">
-                    <div style="min-width: 20px; max-width: 50px; width: 10%">
-                        <i class="fa-solid fa-house fa-fw"></i>
-                    </div>
-                    <div style="min-width: 100px; max-width: 150%; width: 20%">Home</div>
-                </div>
-            </a>
-            
-            <a href="/about">
-                <div class="item">
-                    <div style="min-width: 20px; max-width: 50px; width: 10%">
-                        <i class="fa-solid fa-id-card fa-fw"></i>
-                    </div>
-                    <div style="min-width: 100px; max-width: 150%; width: 20%">About</div>
-                </div>
-            </a>
-            
-            <a href="/archives">
-                <div class="item">
-                    <div style="min-width: 20px; max-width: 50px; width: 10%">
-                        <i class="fa-solid fa-box-archive fa-fw"></i>
-                    </div>
-                    <div style="min-width: 100px; max-width: 150%; width: 20%">Archives</div>
-                </div>
-            </a>
-            
-            <a href="/categories">
-                <div class="item">
-                    <div style="min-width: 20px; max-width: 50px; width: 10%">
-                        <i class="fa-solid fa-bookmark fa-fw"></i>
-                    </div>
-                    <div style="min-width: 100px; max-width: 150%; width: 20%">Categories</div>
-                </div>
-            </a>
-            
-            <a href="/tags">
-                <div class="item">
-                    <div style="min-width: 20px; max-width: 50px; width: 10%">
-                        <i class="fa-solid fa-tags fa-fw"></i>
-                    </div>
-                    <div style="min-width: 100px; max-width: 150%; width: 20%">Tags</div>
-                </div>
-            </a>
-            
-        </div>
-        </transition>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="切换导航栏">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
     </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">Caoy</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
+  </div>
 </nav>
 
-                <div class="article">
-    <div>
-        <h1>Linux操作系统期末复习 </h1>
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipexe4oykj20zk0m87ji.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicitspjpbj20zk0m81ky.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipevuctzzj20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclh5u05ej20zk0m87df.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipew8gmvyj20zk0m87wh.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclgrvbd6j20zk0m8qv5.jpg"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
     </div>
-    <div class="info">
-        <span class="date">
-            <span class="icon">
-                <i class="fa-solid fa-calendar fa-fw"></i>
-            </span>
-            2023/2/3
-        </span>
-        
-        <span class="category">
-            <a href="/categories/%E6%96%B0%E4%BD%99%E5%AD%A6%E9%99%A2%E7%AC%AC%E4%B8%80%E5%AD%A6%E6%9C%9F%E5%A4%8D%E4%B9%A0/">
-                <span class="icon">
-                    <i class="fa-solid fa-bookmark fa-fw"></i>
-                </span>
-                新余学院第一学期复习
-            </a>
-        </span>
-        
-        
-        <span class="tags">
-            <span class="icon">
-                <i class="fa-solid fa-tags fa-fw"></i>
-            </span>
-            
-            <span class="tag">
-                
-                <a href="/tags/%E5%A4%8D%E4%B9%A0/" style="color: #03a9f4">复习</a>
-            </span>
-            
-        </span>
-        
-    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
     
-    <div class="content" v-pre>
-        <h1 id="Linux-操作系统期末复习"><a href="#Linux-操作系统期末复习" class="headerlink" title="Linux 操作系统期末复习"></a>Linux 操作系统期末复习</h1><h2 id="单元一-安装与配置Linux操作系统"><a href="#单元一-安装与配置Linux操作系统" class="headerlink" title="单元一 	安装与配置Linux操作系统"></a>单元一 	安装与配置Linux操作系统</h2><h3 id="考点"><a href="#考点" class="headerlink" title="考点"></a>考点</h3><h4 id="1-Linux创始人：Linus-Torvalds-芬兰人"><a href="#1-Linux创始人：Linus-Torvalds-芬兰人" class="headerlink" title="1.  Linux创始人：Linus Torvalds (芬兰人)"></a>1.  Linux创始人：Linus Torvalds (芬兰人)</h4><h4 id="2-Linux-操作系统的优点"><a href="#2-Linux-操作系统的优点" class="headerlink" title="2.  Linux 操作系统的优点"></a>2.  Linux 操作系统的优点</h4><ul>
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">首页</a></span><i class="ic i-angle-right"></i>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/%E6%96%B0%E4%BD%99%E5%AD%A6%E9%99%A2%E7%AC%AC%E4%B8%80%E5%AD%A6%E6%9C%9F%E5%A4%8D%E4%B9%A0/" itemprop="item" rel="index" title="分类于 新余学院第一学期复习"><span itemprop="name">新余学院第一学期复习</span></a>
+<meta itemprop="position" content="1" /></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="en">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2023/02/03/Linux/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/avatar.jpg">
+    <meta itemprop="name" content="John Doe">
+    <meta itemprop="description" content=", ">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Hexo">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <h1 id="linux-操作系统期末复习"><a class="markdownIt-Anchor" href="#linux-操作系统期末复习">#</a> Linux 操作系统期末复习</h1>
+<h2 id="单元一-安装与配置linux操作系统"><a class="markdownIt-Anchor" href="#单元一-安装与配置linux操作系统">#</a> 单元一 	安装与配置 Linux 操作系统</h2>
+<h3 id="考点"><a class="markdownIt-Anchor" href="#考点">#</a> 考点</h3>
+<h4 id="1-linux创始人linus-torvalds-芬兰人"><a class="markdownIt-Anchor" href="#1-linux创始人linus-torvalds-芬兰人">#</a> 1.  Linux 创始人：Linus Torvalds (芬兰人)</h4>
+<h4 id="2-linux-操作系统的优点"><a class="markdownIt-Anchor" href="#2-linux-操作系统的优点">#</a> 2.  Linux 操作系统的优点</h4>
+<ul>
 <li>开源免费</li>
 <li>系统迭代更新</li>
 <li>系统性能稳定</li>
@@ -174,91 +184,80 @@
 <li>应用领域广泛</li>
 <li>入门及使用容易</li>
 </ul>
-<h4 id="3-Linux发展有几大支柱？"><a href="#3-Linux发展有几大支柱？" class="headerlink" title="3.  Linux发展有几大支柱？"></a>3.  Linux发展有几大支柱？</h4><ol>
-<li>开源社区： Linux是一个开源项目，其社区是其发展的核心。社区成员包括开发人员、用户、企业和组织，他们一起贡献代码和改进Linux的功能和性能。</li>
-<li>商业支持： Linux获得了广泛的商业支持，包括大型IT公司和软件公司，他们在研发、销售和提供服务方面为Linux做出了巨大贡献。</li>
-<li>应用领域： Linux在不断扩大的应用领域中取得了巨大成功，包括服务器、移动设备、物联网、智能家居、汽车电子、医疗信息系统等。</li>
+<h4 id="3-linux发展有几大支柱"><a class="markdownIt-Anchor" href="#3-linux发展有几大支柱">#</a> 3.  Linux 发展有几大支柱？</h4>
+<ol>
+<li>开源社区： Linux 是一个开源项目，其社区是其发展的核心。社区成员包括开发人员、用户、企业和组织，他们一起贡献代码和改进 Linux 的功能和性能。</li>
+<li>商业支持： Linux 获得了广泛的商业支持，包括大型 IT 公司和软件公司，他们在研发、销售和提供服务方面为 Linux 做出了巨大贡献。</li>
+<li>应用领域： Linux 在不断扩大的应用领域中取得了巨大成功，包括服务器、移动设备、物联网、智能家居、汽车电子、医疗信息系统等。</li>
 </ol>
-<h4 id="4-Linux版本"><a href="#4-Linux版本" class="headerlink" title="4.  Linux版本"></a>4.  Linux版本</h4><ol>
-<li><p>linux版本分为内核版和发行版，格式通常为主版本号，次版本号，修正号。其中次版本号：偶数表示稳定版本，奇数表示开发版本。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">例：</span><br><span class="line">3.10.0-327.el7.x86_64</span><br><span class="line">第一组数字：3 代表主版本号</span><br><span class="line">第二组数字：10表示次版本号，稳定版本</span><br><span class="line">第三组数字：0-327，修订版本，表示修改的次数</span><br><span class="line">el7是REHL7系列的</span><br></pre></td></tr></table></figure></li>
+<h4 id="4-linux版本"><a class="markdownIt-Anchor" href="#4-linux版本">#</a> 4.  Linux 版本</h4>
+<ol>
+<li>
+<p>linux 版本分为内核版和发行版，格式通常为主版本号，次版本号，修正号。其中次版本号：偶数表示稳定版本，奇数表示开发版本。</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>例：</pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token number">3.10</span>.0-327.el7.x86_64</pre></td></tr><tr><td data-num="3"></td><td><pre>第一组数字：3 代表主版本号</pre></td></tr><tr><td data-num="4"></td><td><pre>第二组数字：10表示次版本号，稳定版本</pre></td></tr><tr><td data-num="5"></td><td><pre>第三组数字：0-327，修订版本，表示修改的次数</pre></td></tr><tr><td data-num="6"></td><td><pre>el7是REHL7系列的</pre></td></tr></table></figure></li>
 </ol>
-<h4 id="5-分区"><a href="#5-分区" class="headerlink" title="5. 分区"></a>5. 分区</h4><ol>
-<li>Linux至少要安装两个分区：根分区和交换分区（root和swap）</li>
+<h4 id="5-分区"><a class="markdownIt-Anchor" href="#5-分区">#</a> 5. 分区</h4>
+<ol>
+<li>Linux 至少要安装两个分区：根分区和交换分区（root 和 swap）</li>
 </ol>
-<h4 id="6-课后习题"><a href="#6-课后习题" class="headerlink" title="6. 课后习题"></a>6. 课后习题</h4><p>   一、单选题<br>   1.下列_____________是自由软件。<br>   （15.0分）</p>
-<p>   A、Windows10<br>   B、UNIX<br>   C、Linux<br>   D、Windows Server 2016<br>   正确答案: C<br>   2.Linux的内核版本2.3.20是_______________版本。（15.0分）</p>
-<p>   A、不稳定<br>   B、稳定的<br>   C、第三次修订<br>   D、第二次修订<br>   正确答案: A<br>   二、填空题<br>   3.Linux诞生于1991年10月5日，由_____________开发的。（14.0分）</p>
-<p>   正确答案: Linus Torvalds;林纳斯.托瓦兹<br>   4.Linux是一个_________任务、___________用户的操作系统。（14.0分）</p>
-<p>   正确答案: 多     多</p>
-<p>   5.Linux的版本分为____________和___________________。（14.0分）</p>
-<p>   正确答案: 内核版  发行版<br>   6.安装Linux最少需要两个分区，分别是___________和______________。（14.0分）</p>
-<p>   正确答案: 根分区   交换分区<br>   7.Linux默认的系统管理员账号是______________。<br>   （14.0分）</p>
-<p>   正确答案: root</p>
-<h2 id="单元二管理文件系统"><a href="#单元二管理文件系统" class="headerlink" title="单元二	管理文件系统"></a>单元二	管理文件系统</h2><h3 id="考点："><a href="#考点：" class="headerlink" title="考点："></a>考点：</h3><h4 id="1-文件系统类型（至少掌握5个）"><a href="#1-文件系统类型（至少掌握5个）" class="headerlink" title="1. 文件系统类型（至少掌握5个）"></a>1. 文件系统类型（至少掌握5个）</h4><ul>
-<li>ext2：早期Linux中常用的文件系统</li>
-<li>ext3：ext2的升级版，带日志功能</li>
-<li>FAT：Windows XP操作系统采用的文件系统</li>
-<li>NTFS：Windows NT&#x2F;XP操作系统采用的文件系统</li>
+<h4 id="6-课后习题"><a class="markdownIt-Anchor" href="#6-课后习题">#</a> 6. 课后习题</h4>
+<p>一、单选题<br>
+ 1. 下列_____________是自由软件。<br>
+（15.0 分）</p>
+<p>A、Windows10<br>
+B、UNIX<br>
+C、Linux<br>
+D、Windows Server 2016<br>
+ 正确答案: C<br>
+2.Linux 的内核版本 2.3.20 是_______________版本。（15.0 分）</p>
+<p>A、不稳定<br>
+ B、稳定的<br>
+ C、第三次修订<br>
+ D、第二次修订<br>
+正确答案: A<br>
+ 二、填空题<br>
+ 3.Linux 诞生于 1991 年 10 月 5 日，由_____________开发的。（14.0 分）</p>
+<p>正确答案: Linus Torvalds; 林纳斯。托瓦兹<br>
+ 4.Linux 是一个_________任务、___________用户的操作系统。（14.0 分）</p>
+<p>正确答案：多     多</p>
+<p>5.Linux 的版本分为____________和___________________。（14.0 分）</p>
+<p>正确答案：内核版  发行版<br>
+ 6. 安装 Linux 最少需要两个分区，分别是___________和______________。（14.0 分）</p>
+<p>正确答案：根分区   交换分区<br>
+ 7.Linux 默认的系统管理员账号是______________。<br>
+（14.0 分）</p>
+<p>正确答案: root</p>
+<h2 id="单元二管理文件系统"><a class="markdownIt-Anchor" href="#单元二管理文件系统">#</a> 单元二	管理文件系统</h2>
+<h3 id="考点-2"><a class="markdownIt-Anchor" href="#考点-2">#</a> 考点：</h3>
+<h4 id="1-文件系统类型至少掌握5个"><a class="markdownIt-Anchor" href="#1-文件系统类型至少掌握5个">#</a> 1. 文件系统类型（至少掌握 5 个）</h4>
+<ul>
+<li>ext2：早期 Linux 中常用的文件系统</li>
+<li>ext3：ext2 的升级版，带日志功能</li>
+<li>FAT：Windows XP 操作系统采用的文件系统</li>
+<li>NTFS：Windows NT/XP 操作系统采用的文件系统</li>
 <li>ISO9660：大部分光盘所采用的文件系统</li>
 </ul>
-<h4 id="2-Linux文件系统目录结构"><a href="#2-Linux文件系统目录结构" class="headerlink" title="2. Linux文件系统目录结构"></a>2. Linux文件系统目录结构</h4><ul>
-<li>Linux系统中文件和目录名称都是严格区分大小写的，并且名称中不得包含斜杠（&#x2F;）</li>
+<h4 id="2-linux文件系统目录结构"><a class="markdownIt-Anchor" href="#2-linux文件系统目录结构">#</a> 2. Linux 文件系统目录结构</h4>
+<ul>
+<li>Linux 系统中文件和目录名称都是严格区分大小写的，并且名称中不得包含斜杠（/）</li>
 </ul>
-<h4 id="3-Linux默认目录功能"><a href="#3-Linux默认目录功能" class="headerlink" title="3. Linux默认目录功能"></a>3. Linux默认目录功能</h4><table>
-<thead>
-<tr>
-<th>&#x2F;</th>
-<th>根目录，文件的最顶端，整个文件系统的</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>&#x2F;bin</td>
-<td>存放系统所需要的重要命令，ls，cp，mkdir等，usr&#x2F;bin也存放了一些系统命令，这些命令对应的文件都是可执行的，普通用户可以使用大部分的命令</td>
-</tr>
-<tr>
-<td>&#x2F;etc</td>
-<td>一般存放系统的配置文件，作为一些软件启动时默认配置文件读取的目录，如etc&#x2F;fstab存放系统分区信息</td>
-</tr>
-<tr>
-<td>&#x2F;root</td>
-<td>Linux超级权限用户的root目录</td>
-</tr>
-<tr>
-<td>&#x2F;var</td>
-<td>这个目录的内容经常变动，&#x2F;var&#x2F;log用于存放系统日志，&#x2F;var&#x2F;lib存放系统库文件等</td>
-</tr>
-</tbody></table>
-<h4 id="4-文件权限与归属"><a href="#4-文件权限与归属" class="headerlink" title="4. 文件权限与归属"></a>4. 文件权限与归属</h4><table>
-<thead>
-<tr>
-<th>—</th>
-<th>普通文件</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>d</td>
-<td>目录文件</td>
-</tr>
-<tr>
-<td>l</td>
-<td>链接文件</td>
-</tr>
-<tr>
-<td>b</td>
-<td>块设备文件</td>
-</tr>
-<tr>
-<td>c</td>
-<td>字符设备文件</td>
-</tr>
-<tr>
-<td>p</td>
-<td>管道文件</td>
-</tr>
-</tbody></table>
-<p>   文件的读写执行权限简写为rwx，可分别用数字4，2，1表示</p>
-<p>​		</p>
+<h4 id="3-linux默认目录功能"><a class="markdownIt-Anchor" href="#3-linux默认目录功能">#</a> 3. Linux 默认目录功能</h4>
+<p>| /     | 根目录，文件的最顶端，整个文件系统的                         |<br>
+| ----- | ------------------------------------------------------------ |<br>
+| /bin  | 存放系统所需要的重要命令，ls，cp，mkdir 等，usr/bin 也存放了一些系统命令，这些命令对应的文件都是可执行的，普通用户可以使用大部分的命令 |<br>
+| /etc  | 一般存放系统的配置文件，作为一些软件启动时默认配置文件读取的目录，如 etc/fstab 存放系统分区信息 |<br>
+| /root | Linux 超级权限用户的 root 目录                                  |<br>
+| /var  | 这个目录的内容经常变动，/var/log 用于存放系统日志，/var/lib 存放系统库文件等 |</p>
+<h4 id="4-文件权限与归属"><a class="markdownIt-Anchor" href="#4-文件权限与归属">#</a> 4. 文件权限与归属</h4>
+<p>| —    | 普通文件     |<br>
+| ---- | ------------ |<br>
+| d    | 目录文件     |<br>
+| l    | 链接文件     |<br>
+| b    | 块设备文件   |<br>
+| c    | 字符设备文件 |<br>
+| p    | 管道文件     |</p>
+<p>文件的读写执行权限简写为 rwx，可分别用数字 4，2，1 表示</p>
+<p>​</p>
 <p>​				文件权限的字符与数字表示</p>
 <table>
 <thead>
@@ -275,7 +274,8 @@
 <th></th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>权限项</td>
 <td>读</td>
 <td>写</td>
@@ -311,27 +311,32 @@
 <td>2</td>
 <td>1</td>
 </tr>
-</tbody></table>
-<h4 id="5-什么是硬链接，什么是软链接"><a href="#5-什么是硬链接，什么是软链接" class="headerlink" title="5. 什么是硬链接，什么是软链接"></a>5. 什么是硬链接，什么是软链接</h4><ul>
-<li><p>硬链接(hark link)：是指在文件系统中为一个已存在文件创建的另一个文件名，它们都指向同一个文件的 inode（文件索引节点），所以硬链接文件和原文件共享同一个 inode。如果原文件被删除，硬链接文件仍能正常使用，因为它们都指向同一个 inode。</p>
+</tbody>
+</table>
+<h4 id="5-什么是硬链接什么是软链接"><a class="markdownIt-Anchor" href="#5-什么是硬链接什么是软链接">#</a> 5. 什么是硬链接，什么是软链接</h4>
+<ul>
+<li>
+<p>硬链接 (hark link)：是指在文件系统中为一个已存在文件创建的另一个文件名，它们都指向同一个文件的 inode（文件索引节点），所以硬链接文件和原文件共享同一个 inode。如果原文件被删除，硬链接文件仍能正常使用，因为它们都指向同一个 inode。</p>
 </li>
-<li><p>软链接(也称为符号链接 symbolic link):是指在文件系统中为一个已存在文件创建的另一个文件名，不同于硬链接，软链接文件并不指向 inode，而是指向原文件的路径。如果原文件被删除或更名，软链接文件就会失效。</p>
+<li>
+<p>软链接 (也称为符号链接 symbolic link): 是指在文件系统中为一个已存在文件创建的另一个文件名，不同于硬链接，软链接文件并不指向 inode，而是指向原文件的路径。如果原文件被删除或更名，软链接文件就会失效。</p>
 </li>
-<li><p>可以使用ln命令来创建硬链接和软链接。使用-s参数来创建软链接，不带任何参数就是创建硬链接。 例： ln -s &#x2F;path&#x2F;to&#x2F;original&#x2F;file &#x2F;path&#x2F;to&#x2F;symbolic&#x2F;link ln &#x2F;path&#x2F;to&#x2F;original&#x2F;file &#x2F;path&#x2F;to&#x2F;hard&#x2F;link</p>
+<li>
+<p>可以使用 ln 命令来创建硬链接和软链接。使用 - s 参数来创建软链接，不带任何参数就是创建硬链接。 例： ln -s /path/to/original/file/path/to/symbolic/link ln /path/to/original/file/path/to/hard/link</p>
 </li>
-<li><p>（不用背，了解即可）</p>
-<p>   inode (Index Node) 是 Linux 文件系统中的一种结构，用于存储文件的元数据，例如文件的权限、所有者、大小、时间戳等。</p>
-<p>   每个文件在文件系统中都有一个唯一的 inode，inode 号在文件系统中是唯一的。文件名只是一个指向 inode 的指针，而文件的实际数据则存储在 inode 所指向的数据块中。这就是为什么在 Linux 系统中可以使用硬链接，因为硬链接只是另一个指向同一个 inode 的文件名。</p>
-<p>   当文件被删除时，文件系统会回收文件的 inode 号，但是文件的数据块不会立即被回收，直到文件系统中没有指向它的 inode 号。</p>
-<p>   一般来说，我们不需要关心 inode 号，因为 Linux 文件系统会自动维护它。但是，在一些特殊情况下，例如文件系统碎片整理或恢复文件时，需要了解 inode 号的概念。</p>
+<li>
+<p>（不用背，了解即可）</p>
+<p>inode (Index Node) 是 Linux 文件系统中的一种结构，用于存储文件的元数据，例如文件的权限、所有者、大小、时间戳等。</p>
+<p>每个文件在文件系统中都有一个唯一的 inode，inode 号在文件系统中是唯一的。文件名只是一个指向 inode 的指针，而文件的实际数据则存储在 inode 所指向的数据块中。这就是为什么在 Linux 系统中可以使用硬链接，因为硬链接只是另一个指向同一个 inode 的文件名。</p>
+<p>当文件被删除时，文件系统会回收文件的 inode 号，但是文件的数据块不会立即被回收，直到文件系统中没有指向它的 inode 号。</p>
+<p>一般来说，我们不需要关心 inode 号，因为 Linux 文件系统会自动维护它。但是，在一些特殊情况下，例如文件系统碎片整理或恢复文件时，需要了解 inode 号的概念。</p>
 </li>
 </ul>
-<h4 id="6-操作命令"><a href="#6-操作命令" class="headerlink" title="6. 操作命令"></a>6. 操作命令</h4><ul>
-<li><p>wc命令：wc命令英语统计指定文本的行数，字数，字节数，格式为“wc[参数][文本]”</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">例：<span class="built_in">ls</span>|<span class="built_in">wc</span> -l 显示当前目录下所有文件数量</span><br></pre></td></tr></table></figure>
-
-
-<p>​	</p>
+<h4 id="6-操作命令"><a class="markdownIt-Anchor" href="#6-操作命令">#</a> 6. 操作命令</h4>
+<ul>
+<li>
+<p>wc 命令：wc 命令英语统计指定文本的行数，字数，字节数，格式为 “wc [参数][文本]”</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>例：ls<span class="token operator">|</span><span class="token function">wc</span> <span class="token parameter variable">-l</span> 显示当前目录下所有文件数量</pre></td></tr></table></figure><p>​</p>
 <table>
 <thead>
 <tr>
@@ -339,7 +344,8 @@
 <th>作用</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>-l</td>
 <td>只显示行数</td>
 </tr>
@@ -351,21 +357,22 @@
 <td>-c</td>
 <td>只显示字节数</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 </li>
-<li><p>mkdir命令：用于创建空白的目录，格式为“mkdir[选项][目录]”，可以结合-p参数来递归创建出具有嵌套关系的文件目录</p>
+<li>
+<p>mkdir 命令：用于创建空白的目录，格式为 “mkdir [选项][目录]”，可以结合 - p 参数来递归创建出具有嵌套关系的文件目录</p>
 </li>
 </ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">例：</span><br><span class="line"><span class="built_in">mkdir</span> -p a/b/c/d/e</span><br></pre></td></tr></table></figure>
-
-
-
-<p>​     </p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>例：</pre></td></tr><tr><td data-num="2"></td><td><pre> <span class="token function">mkdir</span> <span class="token parameter variable">-p</span> a/b/c/d/e</pre></td></tr></table></figure><p>​</p>
 <ul>
-<li><p>rmdir命令：用于删除空白目录，格式为“[rmdir][选项][目录]“，也可以结合-p参数来递归删除具有嵌套叠层关系的文件目录，删除指定目录后，若该目录的上层目录变成空目录，则将其一并删除。</p>
-<p>例：<br>rmdir -p a&#x2F;b&#x2F;c&#x2F;d&#x2F;e</p>
+<li>
+<p>rmdir 命令：用于删除空白目录，格式为 “[rmdir][选项][目录]“，也可以结合 - p 参数来递归删除具有嵌套叠层关系的文件目录，删除指定目录后，若该目录的上层目录变成空目录，则将其一并删除。</p>
+<p>例：<br>
+rmdir -p a/b/c/d/e</p>
 </li>
-<li><p>cp命令**(必考)**：用于复制文件或目录，格式为”cp[选项][源文件][目标文件]”，复制分三种情况：</p>
+<li>
+<p>cp 命令 **(必考)**：用于复制文件或目录，格式为 &quot;cp [选项][源文件][目标文件]&quot;，复制分三种情况：</p>
 <ul>
 <li>如果目标文件是目录，则会把源文件复制到该目录中；</li>
 <li>如果目标是存在的普通文件，则会询问，是否要覆盖他；</li>
@@ -378,7 +385,8 @@
 <th>作用</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>-r</td>
 <td>递归连续复制（用于目录）</td>
 </tr>
@@ -392,15 +400,17 @@
 </tr>
 <tr>
 <td>-d</td>
-<td>若对象为“链接文件”，则保留该“链接文件”的属性</td>
+<td>若对象为 “链接文件”，则保留该 “链接文件” 的属性</td>
 </tr>
 <tr>
 <td>-i</td>
 <td>若目标文件存在则询问是否覆盖</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 </li>
-<li><p>tar命令：用来建立，还原备份文件。格式为“tar[选项][文件]”（常用的备份工具，tar，cpio，dump）</p>
+<li>
+<p>tar 命令：用来建立，还原备份文件。格式为 “tar [选项][文件]”（常用的备份工具，tar，cpio，dump）</p>
 <table>
 <thead>
 <tr>
@@ -408,13 +418,14 @@
 <th>作用</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>-c</td>
 <td>创建新的文档</td>
 </tr>
 <tr>
 <td>-v</td>
-<td>显示详细的tar处理的文件信息</td>
+<td>显示详细的 tar 处理的文件信息</td>
 </tr>
 <tr>
 <td>-f</td>
@@ -430,255 +441,683 @@
 </tr>
 <tr>
 <td>-z</td>
-<td>有gzip属性的</td>
+<td>有 gzip 属性的</td>
 </tr>
 <tr>
 <td>-j</td>
-<td>有bz2属性的</td>
+<td>有 bz2 属性的</td>
 </tr>
 <tr>
 <td>-r</td>
 <td>表示增加文件，把要增加的文件追加在压缩文件的末尾</td>
 </tr>
-</tbody></table>
-<p><strong>注意：c和x不可同时出现，常用的一般是czvf，xzvf</strong></p>
+</tbody>
+</table>
+<p><strong>注意：c 和 x 不可同时出现，常用的一般是 czvf，xzvf</strong></p>
 </li>
-<li><p>find命令：用于按照指定的条件来查找<strong>文件</strong>，格式为“find[查找路径][寻找条件操作]”</p>
-<p>注意要和grep区分开来，两个命令的主要区别就是grep是查找文本中的<strong>字符串</strong>,find是查找<strong>文件或文件夹</strong>,并可以对查找到的文件进行操作。</p>
+<li>
+<p>find 命令：用于按照指定的条件来查找<strong>文件</strong>，格式为 “find [查找路径][寻找条件操作]&quot;</p>
+<p>注意要和 grep 区分开来，两个命令的主要区别就是 grep 是查找文本中的<strong>字符串</strong>，find 是查找<strong>文件或文件夹</strong>，并可以对查找到的文件进行操作。</p>
 </li>
-<li><p>chmod命令：主要用于修改文件或者目录的权限，例如 chmod o+w test.txt，赋予其他人写入权限，语法格式：chmod [选项][模式，模式][文件]</p>
+<li>
+<p>chmod 命令：主要用于修改文件或者目录的权限，例如 chmod o+w test.txt，赋予其他人写入权限，语法格式：chmod [选项][模式，模式][文件]</p>
 </li>
 </ul>
-<h4 id="7-单元二课后习题"><a href="#7-单元二课后习题" class="headerlink" title="7. 单元二课后习题"></a>7. 单元二课后习题</h4><p>一、单选题<br> 1.如果忘记了ls命令的用法，可以采用（    ）命令获得帮助。（5.0分）</p>
-<p> A、?ls<br> B、help ls<br> C、man ls<br> D、get ls<br> 正确答案: C<br> 2.存放Linux基本命令的目录是什么？（          ）（5.0分）</p>
-<p> A、&#x2F;bin<br> B、&#x2F;tmp<br> C、&#x2F;lib<br> D、&#x2F;root<br> 正确答案: A<br> 3.如果当前目录是&#x2F;home&#x2F;sea&#x2F;china，那么“china”的父目录是哪个目录？（  ）<br> （5.0分）</p>
-<p> A、&#x2F;home&#x2F;sea<br> B、&#x2F;home<br> C、&#x2F;<br> D、&#x2F;seas<br> 正确答案: A<br> 4.用ls -al命令列出下面的文件列表，哪个文件是符号链接文件？（   ）（5.0分）</p>
-<p> A、-rw——-    2    hel-s    users    56    Sep    09    11:05    hello<br> B、-rw——-    2    hel-s    users    56    Sep    09    11:05    goodbye<br> C、drwx——    2    hel-s    users    56    Sep    09    11:05    zhang<br> D、lrw——-    2    hel-s    users    56    Sep    09    11:05    cheng<br> 正确答案: D<br> 5.要查看当前所在的目录，应使用的命令是（    ）。（5.0分）</p>
-<p> A、pwd<br> B、ls<br> C、ls  -l<br> D、ls  -A<br> 正确答案: A<br> 6.用长格式形式使用ls命令列出当前目录下的文件和目录，命令是（   ）。（5.0分）</p>
-<p> A、ls  -a<br> B、ls  -A<br> C、cd<br> D、ls  -l<br> 正确答案: D<br> 7.在当前目录下，创建测试目录test的命令是（    ）。（5.0分）</p>
-<p> A、touch test<br> B、rmdir test<br> C、mkdir test<br> D、rm test<br> 正确答案: C<br> 8.在当前目录创建一个新的空文件newfile，命令是（    ）。（5.0分）</p>
-<p> A、mkdir  newfile<br> B、touch newfile<br> C、rmdir newfile<br> D、rm newfile<br> 正确答案: B<br> 9.利用cp命令复制系统文件&#x2F;etc&#x2F;profile到当前目录下，命令是（    ）。（5.0分）</p>
-<p> A、#cp  &#x2F;etc&#x2F;profile&#x2F;<br> B、#cp  &#x2F;etc&#x2F;profile  .&#x2F;<br> C、#cp  &#x2F;    &#x2F;etc&#x2F;profile<br> D、#cp  .&#x2F;    &#x2F;etc&#x2F;profile<br> 正确答案: B<br> 10.复制文件profile到一个新文件profile.bak作为备份，命令是（    ）。（5.0分）</p>
-<p> A、cp  profile   profile.bak<br> B、cp   profile.bak  profile</p>
-<p> C、mv  profile  profile.bak<br> D、mv  profile.bak  profile<br> 正确答案: A<br> 11.删除test子目录下的所有文件，命令是（    ）。（5.0分）</p>
-<p> A、#rm  -rf  test<br> B、#rmdir  test<br> C、#rmdir  -r  test<br> D、#mkdir  -r  test<br> 正确答案: A<br> 12.用less命令分屏查看文件profile的内容，命令是（    ）。（5.0分）</p>
-<p> A、#less  profile<br> B、#profile less<br> C、#more  profile<br> D、#profile  more<br> 正确答案: A<br> 二、填空题<br> 13.在Linux系统中命令________大小写。在命令行中，可以使用_________键来自动补齐命令。<br> （4.0分）</p>
-<p> 正确答案: 区分     tab<br> 14.如果在一个命令行上输入和执行多条命令，可以使用_______来分隔命令。<br> （4.0分）</p>
-<p> 正确答案: ;;分号<br> 15.要使程序以后台方式执行，只需要在执行命令后跟上一个_______符号。（4.0分）</p>
-<p> 正确答案: &amp;<br> 16.________代表当前目录，也可以用.&#x2F;来表示。_______代表上一层目录，也可以用..&#x2F;来表示。（4.0分）</p>
-<p> 正确答案: .    ..<br> 17.若文件名前多一个“.”，则代表该文件为_________，可以使用_________命令查看隐藏文件。（4.0分）</p>
-<p> 正确答案: 隐藏文件    ls -a<br> 三、简答题<br> 18.在使用rm命令删除文件或目录时，可使用哪个参数来避免二次确认呢？（10.0分）<br> -f<br> 19.某链接文件的权限用数字表示法为755，那么相应的字符法表示是什么呢？（10.0分）</p>
-<p> 如果一个链接文件的权限用数字表示法为 755，那么相应的字符表示法为 lrwxr-xr-x.</p>
-<p> 其中:<br> l:代表链接文件<br> rwx：文件所有者有读、写、执行权限<br> r-x：文件所属组有读、执行权限<br> r-x：其他用户有读、执行权限</p>
-<p> ‘rwx’ 代表文件所有者有读(r)、写(w)、执行(x)权限。<br> ‘r-x’ 代表文件所属组有读(r)、执行(x)权限，没有写(w)权限。<br> ‘r-x’ 代表其他用户有读(r)、执行(x)权限，没有写(w)权限。</p>
-<h2 id="单元三-Shell与文本处理"><a href="#单元三-Shell与文本处理" class="headerlink" title="单元三 	Shell与文本处理"></a>单元三 	Shell与文本处理</h2><h3 id="考点-1"><a href="#考点-1" class="headerlink" title="考点"></a>考点</h3><h4 id="1-vim-编辑器模式的切换方法"><a href="#1-vim-编辑器模式的切换方法" class="headerlink" title="1. vim 编辑器模式的切换方法"></a>1. vim 编辑器模式的切换方法</h4><p>  <img src="https://raw.githubusercontent.com/cao-jvm/picbed/master/image-20230127152414755.png?token=AQ6CS6NUR6DSDHBOF6BP5BDD2N6GE" alt="image-20230127152414755"></p>
-<h4 id="2-输入输出重定向"><a href="#2-输入输出重定向" class="headerlink" title="2. 输入输出重定向"></a>2. 输入输出重定向</h4><p>  输入重定向是指把文件导入命令中， 而输出重定向是指把原本要输出到屏幕的数据信息，写入指定文件中</p>
-<h4 id="3-管道命令符"><a href="#3-管道命令符" class="headerlink" title="3. 管道命令符"></a>3. 管道命令符</h4><p>  作用如下：“把前一个命令原本要输出到屏幕的标准正常数据当作是后一个命令的标准输入”</p>
-<p>  Shell提供管道命令“|”，格式为  命令1 | 命令2 | 命令3 | …| 命令n</p>
-  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">例：</span><br><span class="line">用翻页的形式查看/etc目录中的文件列表及属性信息</span><br><span class="line">ls-l /etc |more</span><br></pre></td></tr></table></figure>
-
-<h2 id="单元四-管理Linux服务器的用户、组群及特殊权限"><a href="#单元四-管理Linux服务器的用户、组群及特殊权限" class="headerlink" title="单元四 管理Linux服务器的用户、组群及特殊权限"></a>单元四 管理Linux服务器的用户、组群及特殊权限</h2><h3 id="考点-2"><a href="#考点-2" class="headerlink" title="考点"></a>考点</h3><h4 id="1-Linux用户"><a href="#1-Linux用户" class="headerlink" title="1. Linux用户"></a>1. Linux用户</h4><ul>
-<li>管理员UID为0：系统的管理员用户</li>
-<li>系统用户UID为1—999：Linux系统为了避免因某个服务程序出现漏洞而被黑客提权至整台服务器，默认服务程序会有独立的系统用户负责运行，进而有效控制被破坏的范围。</li>
-<li>普通用户UID从1000开始：是由管理员创建的用于日常工作的用户.</li>
+<h4 id="7-单元二课后习题"><a class="markdownIt-Anchor" href="#7-单元二课后习题">#</a> 7. 单元二课后习题</h4>
+<p>一、单选题<br>
+ 1. 如果忘记了 ls 命令的用法，可以采用（    ）命令获得帮助。（5.0 分）</p>
+<p>A、?ls<br>
+B、help ls<br>
+C、man ls<br>
+D、get ls<br>
+ 正确答案: C<br>
+2. 存放 Linux 基本命令的目录是什么？（          ）（5.0 分）</p>
+<p>A、/bin<br>
+B、/tmp<br>
+C、/lib<br>
+D、/root<br>
+ 正确答案: A<br>
+3. 如果当前目录是 /home/sea/china，那么 “china” 的父目录是哪个目录？（  ）<br>
+（5.0 分）</p>
+<p>A、/home/sea<br>
+B、/home<br>
+C、/<br>
+D、/seas<br>
+ 正确答案: A<br>
+4. 用 ls -al 命令列出下面的文件列表，哪个文件是符号链接文件？（   ）（5.0 分）</p>
+<p>A、-rw-------    2    hel-s    users    56    Sep    09    11:05    hello<br>
+B、-rw-------    2    hel-s    users    56    Sep    09    11:05    goodbye<br>
+C、drwx------    2    hel-s    users    56    Sep    09    11:05    zhang<br>
+D、lrw-------    2    hel-s    users    56    Sep    09    11:05    cheng<br>
+ 正确答案: D<br>
+5. 要查看当前所在的目录，应使用的命令是（    ）。（5.0 分）</p>
+<p>A、pwd<br>
+B、ls<br>
+C、ls  -l<br>
+D、ls  -A<br>
+ 正确答案: A<br>
+6. 用长格式形式使用 ls 命令列出当前目录下的文件和目录，命令是（   ）。（5.0 分）</p>
+<p>A、ls  -a<br>
+B、ls  -A<br>
+C、cd<br>
+D、ls  -l<br>
+ 正确答案: D<br>
+7. 在当前目录下，创建测试目录 test 的命令是（    ）。（5.0 分）</p>
+<p>A、touch test<br>
+B、rmdir test<br>
+C、mkdir test<br>
+D、rm test<br>
+ 正确答案: C<br>
+8. 在当前目录创建一个新的空文件 newfile，命令是（    ）。（5.0 分）</p>
+<p>A、mkdir  newfile<br>
+B、touch newfile<br>
+C、rmdir newfile<br>
+D、rm newfile<br>
+ 正确答案: B<br>
+9. 利用 cp 命令复制系统文件 /etc/profile 到当前目录下，命令是（    ）。（5.0 分）</p>
+<p>A、#cp  /etc/profile/<br>
+B、#cp  /etc/profile  ./<br>
+C、#cp  /    /etc/profile<br>
+D、#cp  ./    /etc/profile<br>
+ 正确答案: B<br>
+10. 复制文件 profile 到一个新文件 profile.bak 作为备份，命令是（    ）。（5.0 分）</p>
+<p>A、cp  profile   profile.bak<br>
+B、cp   profile.bak  profile</p>
+<p>C、mv  profile  profile.bak<br>
+D、mv  profile.bak  profile<br>
+ 正确答案: A<br>
+11. 删除 test 子目录下的所有文件，命令是（    ）。（5.0 分）</p>
+<p>A、#rm  -rf  test<br>
+B、#rmdir  test<br>
+C、#rmdir  -r  test<br>
+D、#mkdir  -r  test<br>
+ 正确答案: A<br>
+12. 用 less 命令分屏查看文件 profile 的内容，命令是（    ）。（5.0 分）</p>
+<p>A、#less  profile<br>
+B、#profile less<br>
+C、#more  profile<br>
+D、#profile  more<br>
+ 正确答案: A<br>
+ 二、填空题<br>
+ 13. 在 Linux 系统中命令________大小写。在命令行中，可以使用_________键来自动补齐命令。<br>
+（4.0 分）</p>
+<p>正确答案：区分     tab<br>
+14. 如果在一个命令行上输入和执行多条命令，可以使用_______来分隔命令。<br>
+（4.0 分）</p>
+<p>正确答案: ;; 分号<br>
+ 15. 要使程序以后台方式执行，只需要在执行命令后跟上一个_______符号。（4.0 分）</p>
+<p>正确答案: &amp;<br>
+16.________代表当前目录，也可以用./ 来表示。_______代表上一层目录，也可以用…/ 来表示。（4.0 分）</p>
+<p>正确答案: .    …<br>
+17. 若文件名前多一个 “.”，则代表该文件为_________，可以使用_________命令查看隐藏文件。（4.0 分）</p>
+<p>正确答案：隐藏文件    ls -a<br>
+ 三、简答题<br>
+ 18. 在使用 rm 命令删除文件或目录时，可使用哪个参数来避免二次确认呢？（10.0 分）<br>
+-f<br>
+19. 某链接文件的权限用数字表示法为 755，那么相应的字符法表示是什么呢？（10.0 分）</p>
+<p>如果一个链接文件的权限用数字表示法为 755，那么相应的字符表示法为 lrwxr-xr-x.</p>
+<p>其中:<br>
+l: 代表链接文件<br>
+ rwx：文件所有者有读、写、执行权限<br>
+ r-x：文件所属组有读、执行权限<br>
+ r-x：其他用户有读、执行权限</p>
+<p>‘rwx’ 代表文件所有者有读 ®、写 (w)、执行 (x) 权限。<br>
+‘r-x’ 代表文件所属组有读 ®、执行 (x) 权限，没有写 (w) 权限。<br>
+‘r-x’ 代表其他用户有读 ®、执行 (x) 权限，没有写 (w) 权限。</p>
+<h2 id="单元三-shell与文本处理"><a class="markdownIt-Anchor" href="#单元三-shell与文本处理">#</a> 单元三 	Shell 与文本处理</h2>
+<h3 id="考点-3"><a class="markdownIt-Anchor" href="#考点-3">#</a> 考点</h3>
+<h4 id="1-vim-编辑器模式的切换方法"><a class="markdownIt-Anchor" href="#1-vim-编辑器模式的切换方法">#</a> 1. vim 编辑器模式的切换方法</h4>
+<p><img data-src="https://raw.githubusercontent.com/cao-jvm/picbed/master/image-20230127152414755.png?token=AQ6CS6NUR6DSDHBOF6BP5BDD2N6GE" alt="image-20230127152414755"></p>
+<h4 id="2-输入输出重定向"><a class="markdownIt-Anchor" href="#2-输入输出重定向">#</a> 2. 输入输出重定向</h4>
+<p>输入重定向是指把文件导入命令中， 而输出重定向是指把原本要输出到屏幕的数据信息，写入指定文件中</p>
+<h4 id="3-管道命令符"><a class="markdownIt-Anchor" href="#3-管道命令符">#</a> 3. 管道命令符</h4>
+<p>作用如下：“把前一个命令原本要输出到屏幕的标准正常数据当作是后一个命令的标准输入”</p>
+<p>Shell 提供管道命令 “|”，格式为  命令 1 | 命令 2 | 命令 3 | …| 命令 n</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>例：</pre></td></tr><tr><td data-num="2"></td><td><pre>用翻页的形式查看/etc目录中的文件列表及属性信息</pre></td></tr><tr><td data-num="3"></td><td><pre>ls-l /etc <span class="token operator">|</span><span class="token function">more</span></pre></td></tr></table></figure><h2 id="单元四-管理linux服务器的用户-组群及特殊权限"><a class="markdownIt-Anchor" href="#单元四-管理linux服务器的用户-组群及特殊权限">#</a> 单元四 管理 Linux 服务器的用户、组群及特殊权限</h2>
+<h3 id="考点-4"><a class="markdownIt-Anchor" href="#考点-4">#</a> 考点</h3>
+<h4 id="1-linux用户"><a class="markdownIt-Anchor" href="#1-linux用户">#</a> 1. Linux 用户</h4>
+<ul>
+<li>管理员 UID 为 0：系统的管理员用户</li>
+<li>系统用户 UID 为 1—999：Linux 系统为了避免因某个服务程序出现漏洞而被黑客提权至整台服务器，默认服务程序会有独立的系统用户负责运行，进而有效控制被破坏的范围。</li>
+<li>普通用户 UID 从 1000 开始：是由管理员创建的用于日常工作的用户.</li>
 </ul>
-<h4 id="2-用户账户文件"><a href="#2-用户账户文件" class="headerlink" title="2. 用户账户文件"></a>2. 用户账户文件</h4><ol>
-<li><p>&#x2F;etc&#x2F;passwd 文件: 是Linux和Unix系统中用于存储用户账号信息的文件。该文件包含了每个用户的用户名、密码、用户 ID (UID)、组 ID (GID)、家目录以及登录时使用的 shell 等信息。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">/etc/passwd文件中每一行都是一个用户的信息，字段之间用冒号(:)分隔，每个字段的意义如下：</span><br><span class="line"></span><br><span class="line">用户名：登录系统时使用的用户名。</span><br><span class="line">密码：存储的是加密后的密码，对于本地用户来说，这一栏会是一个<span class="string">&quot;x&quot;</span>或者<span class="string">&quot;*&quot;</span>。</span><br><span class="line">用户 ID (UID)：用户的唯一标识。</span><br><span class="line">组 ID (GID)：用户所属的组的唯一标识。</span><br><span class="line">用户描述：一些关于用户的附加信息。</span><br><span class="line">家目录：用户登录后所进入的目录。</span><br><span class="line">登录时使用的 shell：用户登录后所使用的 shell。</span><br><span class="line">如：root:x:0:0:root:/root:/bin/bash</span><br><span class="line"></span><br><span class="line">注：由于/etc/passwd存储了密码的加密信息，所以它不能被普通用户读取。</span><br></pre></td></tr></table></figure>
-
-
-</li>
-<li><p>&#x2F;etc&#x2F;shadow 文件:是 Linux 和 Unix 系统中用于存储用户密码的加密信息的文件。这个文件与 &#x2F;etc&#x2F;passwd 文件配合使用，用于保证密码的安全性。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">/etc/shadow文件中每一行都是一个用户的信息，字段之间用冒号(:)分隔，每个字段的意义如下：</span><br><span class="line"></span><br><span class="line">用户名：与/etc/passwd文件中的用户名相同</span><br><span class="line">密码：存储的是加密后的密码。一般是以$<span class="built_in">id</span>$salt<span class="variable">$hashed</span>的形式存储，<span class="built_in">id</span>表示使用的加密算法，salt是随机生成的盐值，hashed是哈希值</span><br></pre></td></tr></table></figure></li>
+<h4 id="2-用户账户文件"><a class="markdownIt-Anchor" href="#2-用户账户文件">#</a> 2. 用户账户文件</h4>
+<ol>
+<li>
+<p>/etc/passwd 文件：是 Linux 和 Unix 系统中用于存储用户账号信息的文件。该文件包含了每个用户的用户名、密码、用户 ID (UID)、组 ID (GID)、家目录以及登录时使用的 shell 等信息。</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>/etc/passwd文件中每一行都是一个用户的信息，字段之间用冒号<span class="token punctuation">(</span>:<span class="token punctuation">)</span>分隔，每个字段的意义如下：</pre></td></tr><tr><td data-num="2"></td><td><pre></pre></td></tr><tr><td data-num="3"></td><td><pre>用户名：登录系统时使用的用户名。</pre></td></tr><tr><td data-num="4"></td><td><pre>密码：存储的是加密后的密码，对于本地用户来说，这一栏会是一个<span class="token string">"x"</span>或者<span class="token string">"*"</span>。</pre></td></tr><tr><td data-num="5"></td><td><pre>用户 ID <span class="token punctuation">(</span><span class="token environment constant">UID</span><span class="token punctuation">)</span>：用户的唯一标识。</pre></td></tr><tr><td data-num="6"></td><td><pre>组 ID <span class="token punctuation">(</span>GID<span class="token punctuation">)</span>：用户所属的组的唯一标识。</pre></td></tr><tr><td data-num="7"></td><td><pre>用户描述：一些关于用户的附加信息。</pre></td></tr><tr><td data-num="8"></td><td><pre>家目录：用户登录后所进入的目录。</pre></td></tr><tr><td data-num="9"></td><td><pre>登录时使用的 shell：用户登录后所使用的 shell。</pre></td></tr><tr><td data-num="10"></td><td><pre>如：root:x:0:0:root:/root:/bin/bash</pre></td></tr><tr><td data-num="11"></td><td><pre></pre></td></tr><tr><td data-num="12"></td><td><pre>注：由于/etc/passwd存储了密码的加密信息，所以它不能被普通用户读取。</pre></td></tr></table></figure></li>
+<li>
+<p>/etc/shadow 文件：是 Linux 和 Unix 系统中用于存储用户密码的加密信息的文件。这个文件与 /etc/passwd 文件配合使用，用于保证密码的安全性。</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>/etc/shadow文件中每一行都是一个用户的信息，字段之间用冒号<span class="token punctuation">(</span>:<span class="token punctuation">)</span>分隔，每个字段的意义如下：</pre></td></tr><tr><td data-num="2"></td><td><pre></pre></td></tr><tr><td data-num="3"></td><td><pre>用户名：与/etc/passwd文件中的用户名相同</pre></td></tr><tr><td data-num="4"></td><td><pre>密码：存储的是加密后的密码。一般是以<span class="token variable">$id</span><span class="token variable">$salt</span><span class="token variable">$hashed</span>的形式存储，id表示使用的加密算法，salt是随机生成的盐值，hashed是哈希值</pre></td></tr></table></figure></li>
 </ol>
-<h4 id="3-用户账户的创建和管理"><a href="#3-用户账户的创建和管理" class="headerlink" title="3.用户账户的创建和管理"></a>3.用户账户的创建和管理</h4><ol>
-<li>su命令:su (substitute user) 命令是一个 Linux 和 Unix 系统中的命令，用于切换当前登录用户的身份。它可以让当前用户切换到其他用户，并在切换后拥有该用户的权限和环境变量。切换用户的命令是su或者su-</li>
+<h4 id="3用户账户的创建和管理"><a class="markdownIt-Anchor" href="#3用户账户的创建和管理">#</a> 3. 用户账户的创建和管理</h4>
+<ol>
+<li>su 命令:su (substitute user) 命令是一个 Linux 和 Unix 系统中的命令，用于切换当前登录用户的身份。它可以让当前用户切换到其他用户，并在切换后拥有该用户的权限和环境变量。切换用户的命令是 su 或者 su-</li>
 </ol>
-<p>   常用格式是：su [options] [username]</p>
-<p>   其中，username 是要切换的用户名。如果不指定用户名，默认切换到 root 用户。</p>
-<p>   注意: su- 连用户和Shell环境一起切换;su只切换用户而不切换环境</p>
+<p>常用格式是：su [options] [username]</p>
+<p>其中，username 是要切换的用户名。如果不指定用户名，默认切换到 root 用户。</p>
+<p>注意: su- 连用户和 Shell 环境一起切换；su 只切换用户而不切换环境</p>
 <ol start="2">
-<li><p>useradd命令:是 Linux 和 Unix 系统中用于创建新用户帐号的命令。它用于在系统中添加新用户，并且可以通过命令行参数来设置新用户的属性和权限。</p>
-<p>常用格式是：useradd [options] username,其中，username 是要创建的用户名。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">常用选项有:</span><br><span class="line"></span><br><span class="line">-c comment : 设置新用户的说明信息</span><br><span class="line">-d home_dir : 设置新用户的主目录</span><br><span class="line">-e expire_date : 设置新用户的账号过期日期</span><br><span class="line">-g initial_group : 设置新用户的默认组</span><br><span class="line">-m : 创建新用户的主目录并复制默认文件</span><br><span class="line">-s shell : 设置新用户的默认 Shell</span><br><span class="line">-u uid : 设置新用户的 UID</span><br><span class="line">-M : 不创建新用户的主目录</span><br><span class="line">-U : 创建新用户并同时创建一个新的组</span><br><span class="line"></span><br><span class="line">例如：useradd -c &quot;John Doe&quot; -d /home/johndoe -m johndoe</span><br><span class="line">这个命令就是创建名为johndoe的用户,说明信息为John Doe，主目录为/home/johndoe，并且创建目录</span><br><span class="line"></span><br><span class="line">useradd -u 500 -g 100 johndoe</span><br><span class="line">这个命令就是创建名为johndoe的用户,并设置uid为500,gid为100</span><br><span class="line">注意：创建用户后需要给用户设置密码,未设置的用户不能登陆系统,可以使用passwd命令或者usermod命令来设置.</span><br></pre></td></tr></table></figure>
+<li>
+<p>useradd 命令：是 Linux 和 Unix 系统中用于创建新用户帐号的命令。它用于在系统中添加新用户，并且可以通过命令行参数来设置新用户的属性和权限。</p>
+<p>常用格式是：useradd [options] username, 其中，username 是要创建的用户名。</p>
+<pre><code>常用选项有:
+
+-c comment : 设置新用户的说明信息
+-d home_dir : 设置新用户的主目录
+-e expire_date : 设置新用户的账号过期日期
+-g initial_group : 设置新用户的默认组
+-m : 创建新用户的主目录并复制默认文件
+-s shell : 设置新用户的默认 Shell
+-u uid : 设置新用户的 UID
+-M : 不创建新用户的主目录
+-U : 创建新用户并同时创建一个新的组
+
+例如：useradd -c &quot;John Doe&quot; -d /home/johndoe -m johndoe
+这个命令就是创建名为johndoe的用户,说明信息为John Doe，主目录为/home/johndoe，并且创建目录
+
+useradd -u 500 -g 100 johndoe
+这个命令就是创建名为johndoe的用户,并设置uid为500,gid为100
+注意：创建用户后需要给用户设置密码,未设置的用户不能登陆系统,可以使用passwd命令或者usermod命令来设置.
+</code></pre>
 </li>
-<li><p>passwd命令:passwd命令是 Linux 和 Unix 系统中用于修改用户密码的命令。它用于修改当前用户或其他用户的密码。</p>
+<li>
+<p>passwd 命令:passwd 命令是 Linux 和 Unix 系统中用于修改用户密码的命令。它用于修改当前用户或其他用户的密码。</p>
 <p>常用格式是：passwd [options] [username]</p>
 <p>其中，username 是要修改密码的用户名。如果不指定用户名，则默认修改当前用户的密码。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">常用选项有:</span><br><span class="line"></span><br><span class="line">-a : 指定密码加密算法</span><br><span class="line">-d : 删除用户密码</span><br><span class="line">-e : 强制用户立即更改密码</span><br><span class="line">-f : 设置密码最小天数</span><br><span class="line">-l : 锁定用户帐号</span><br><span class="line">-u : 解锁用户帐号</span><br><span class="line">-n : 设置密码最小天数</span><br><span class="line">-x : 设置密码最大天数</span><br><span class="line">-S : 显示用户密码状态信息</span><br><span class="line"></span><br><span class="line">例如：passwd</span><br><span class="line">这个命令就是修改当前用户的密码，系统会要求输入新密码两次</span><br><span class="line">passwd johndoe</span><br><span class="line">这个命令就是修改名为johndoe的用户的密码，需要有相应权限</span><br><span class="line"></span><br><span class="line">注意：在修改密码时会要求输入新密码和确认新密码。修改密码时，系统会检查新密码是否符合安全规则(如，密码长度、字符类型等)。</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>usermod命令:是linux和Unix系统中用于修改用户信息的命令。用于修改已存在的用户的账户信息。</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>常用选项有:</pre></td></tr><tr><td data-num="2"></td><td><pre></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token parameter variable">-a</span> <span class="token builtin class-name">:</span> 指定密码加密算法</pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token parameter variable">-d</span> <span class="token builtin class-name">:</span> 删除用户密码</pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token parameter variable">-e</span> <span class="token builtin class-name">:</span> 强制用户立即更改密码</pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token parameter variable">-f</span> <span class="token builtin class-name">:</span> 设置密码最小天数</pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token parameter variable">-l</span> <span class="token builtin class-name">:</span> 锁定用户帐号</pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token parameter variable">-u</span> <span class="token builtin class-name">:</span> 解锁用户帐号</pre></td></tr><tr><td data-num="9"></td><td><pre><span class="token parameter variable">-n</span> <span class="token builtin class-name">:</span> 设置密码最小天数</pre></td></tr><tr><td data-num="10"></td><td><pre><span class="token parameter variable">-x</span> <span class="token builtin class-name">:</span> 设置密码最大天数</pre></td></tr><tr><td data-num="11"></td><td><pre><span class="token parameter variable">-S</span> <span class="token builtin class-name">:</span> 显示用户密码状态信息</pre></td></tr><tr><td data-num="12"></td><td><pre></pre></td></tr><tr><td data-num="13"></td><td><pre>例如：passwd</pre></td></tr><tr><td data-num="14"></td><td><pre>这个命令就是修改当前用户的密码，系统会要求输入新密码两次</pre></td></tr><tr><td data-num="15"></td><td><pre><span class="token function">passwd</span> johndoe</pre></td></tr><tr><td data-num="16"></td><td><pre>这个命令就是修改名为johndoe的用户的密码，需要有相应权限</pre></td></tr><tr><td data-num="17"></td><td><pre></pre></td></tr><tr><td data-num="18"></td><td><pre>注意：在修改密码时会要求输入新密码和确认新密码。修改密码时，系统会检查新密码是否符合安全规则<span class="token punctuation">(</span>如，密码长度、字符类型等<span class="token punctuation">)</span>。</pre></td></tr></table></figure></li>
+<li>
+<p>usermod 命令：是 linux 和 Unix 系统中用于修改用户信息的命令。用于修改已存在的用户的账户信息。</p>
 <p>常用格式是：usermod [options] username</p>
 <p>其中，username 是要修改的用户名。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">常用选项有:</span><br><span class="line"></span><br><span class="line">-c : 修改用户的注释性描述</span><br><span class="line">-d : 修改用户的家目录</span><br><span class="line">-e : 修改用户的有效期</span><br><span class="line">-g : 修改用户的主组</span><br><span class="line">-G : 修改用户的附加组</span><br><span class="line">-l : 修改用户的登录名</span><br><span class="line">-L : 锁定用户账户</span><br><span class="line">-u : 修改用户的用户ID</span><br><span class="line">-U : 解锁用户账户</span><br><span class="line">-s : 修改用户的登录shell</span><br><span class="line">-a : 显示所有选项</span><br><span class="line"></span><br><span class="line">例如：</span><br><span class="line">usermod -c <span class="string">&quot;John Doe&quot;</span> johndoe</span><br><span class="line">这个命令就是将名为johndoe的用户的注释描述修改为<span class="string">&quot;John Doe&quot;</span></span><br><span class="line">usermod -d /home/johndoe -m johndoe</span><br><span class="line">这个命令就是将名为johndoe的用户的家目录修改为/home/johndoe并将其中的文件移动到新目录</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>userdel命令:是Linux和Unix系统中用于删除用户的命令。它可以删除用户的账户和相关信息。</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>常用选项有:</pre></td></tr><tr><td data-num="2"></td><td><pre></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token parameter variable">-c</span> <span class="token builtin class-name">:</span> 修改用户的注释性描述</pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token parameter variable">-d</span> <span class="token builtin class-name">:</span> 修改用户的家目录</pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token parameter variable">-e</span> <span class="token builtin class-name">:</span> 修改用户的有效期</pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token parameter variable">-g</span> <span class="token builtin class-name">:</span> 修改用户的主组</pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token parameter variable">-G</span> <span class="token builtin class-name">:</span> 修改用户的附加组</pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token parameter variable">-l</span> <span class="token builtin class-name">:</span> 修改用户的登录名</pre></td></tr><tr><td data-num="9"></td><td><pre><span class="token parameter variable">-L</span> <span class="token builtin class-name">:</span> 锁定用户账户</pre></td></tr><tr><td data-num="10"></td><td><pre><span class="token parameter variable">-u</span> <span class="token builtin class-name">:</span> 修改用户的用户ID</pre></td></tr><tr><td data-num="11"></td><td><pre><span class="token parameter variable">-U</span> <span class="token builtin class-name">:</span> 解锁用户账户</pre></td></tr><tr><td data-num="12"></td><td><pre><span class="token parameter variable">-s</span> <span class="token builtin class-name">:</span> 修改用户的登录shell</pre></td></tr><tr><td data-num="13"></td><td><pre><span class="token parameter variable">-a</span> <span class="token builtin class-name">:</span> 显示所有选项</pre></td></tr><tr><td data-num="14"></td><td><pre></pre></td></tr><tr><td data-num="15"></td><td><pre>例如：</pre></td></tr><tr><td data-num="16"></td><td><pre><span class="token function">usermod</span> <span class="token parameter variable">-c</span> <span class="token string">"John Doe"</span> johndoe</pre></td></tr><tr><td data-num="17"></td><td><pre>这个命令就是将名为johndoe的用户的注释描述修改为<span class="token string">"John Doe"</span></pre></td></tr><tr><td data-num="18"></td><td><pre><span class="token function">usermod</span> <span class="token parameter variable">-d</span> /home/johndoe <span class="token parameter variable">-m</span> johndoe</pre></td></tr><tr><td data-num="19"></td><td><pre>这个命令就是将名为johndoe的用户的家目录修改为/home/johndoe并将其中的文件移动到新目录</pre></td></tr></table></figure></li>
+<li>
+<p>userdel 命令：是 Linux 和 Unix 系统中用于删除用户的命令。它可以删除用户的账户和相关信息。</p>
 <p>常用格式是：userdel [options] username</p>
 <p>其中，username 是要删除的用户名。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">常用选项有:</span><br><span class="line"></span><br><span class="line">-r : 删除用户的家目录和相关文件</span><br><span class="line">-f : 强制删除，不提示是否删除</span><br><span class="line">-Z : 删除SELinux用户</span><br><span class="line"></span><br><span class="line">例如：</span><br><span class="line">userdel -r johndoe</span><br><span class="line">这个命令就是将名为johndoe的用户删除,并删除其家目录和相关文件</span><br><span class="line">userdel -f johndoe</span><br><span class="line">这个命令就是将名为johndoe的用户删除,不会提示是否删除</span><br></pre></td></tr></table></figure></li>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>常用选项有:</pre></td></tr><tr><td data-num="2"></td><td><pre></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token parameter variable">-r</span> <span class="token builtin class-name">:</span> 删除用户的家目录和相关文件</pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token parameter variable">-f</span> <span class="token builtin class-name">:</span> 强制删除，不提示是否删除</pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token parameter variable">-Z</span> <span class="token builtin class-name">:</span> 删除SELinux用户</pre></td></tr><tr><td data-num="6"></td><td><pre></pre></td></tr><tr><td data-num="7"></td><td><pre>例如：</pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token function">userdel</span> <span class="token parameter variable">-r</span> johndoe</pre></td></tr><tr><td data-num="9"></td><td><pre>这个命令就是将名为johndoe的用户删除,并删除其家目录和相关文件</pre></td></tr><tr><td data-num="10"></td><td><pre><span class="token function">userdel</span> <span class="token parameter variable">-f</span> johndoe</pre></td></tr><tr><td data-num="11"></td><td><pre>这个命令就是将名为johndoe的用户删除,不会提示是否删除</pre></td></tr></table></figure></li>
 </ol>
-<h4 id="4-课后题-必考"><a href="#4-课后题-必考" class="headerlink" title="4. 课后题(必考)"></a>4. 课后题(必考)</h4><p>linux中什么命令可以用来检测用户lisa的信息?</p>
-<p>A. finger lisa	B. grep lisa 	&#x2F;etc&#x2F;password	C. find lisa &#x2F;etc&#x2F;password	D. who lisa</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">这些些命令可以用来检测用户信息，如：</span><br><span class="line">finger 命令</span><br><span class="line">getent 命令</span><br><span class="line">grep 命令</span><br><span class="line"><span class="built_in">cat</span> /etc/passwd 命令</span><br><span class="line">这些命令都可以用来查看用户的相关信息。</span><br></pre></td></tr></table></figure>
-
-<h2 id="单元五-管理磁盘"><a href="#单元五-管理磁盘" class="headerlink" title="单元五 管理磁盘"></a>单元五 管理磁盘</h2><h3 id="考点-3"><a href="#考点-3" class="headerlink" title="考点"></a>考点</h3><h4 id="1-硬盘分区相关知识"><a href="#1-硬盘分区相关知识" class="headerlink" title="1. 硬盘分区相关知识"></a>1. 硬盘分区相关知识</h4><p>扩展分区: 并不是一个真正的分区,而更像是一个占用了16字节分区表空间的指针—- 一个指向另一个分区的指针</p>
-<p>用户一般会选择使用3个主分区(Primary’)加一个扩展分区(Extended)的方法,然后再扩展分区中创建出数个逻辑分区(Logical),从而来满足多分区(大于4个)的需求.</p>
-<p>磁盘容量 &#x3D; 主分区 + 扩展分区</p>
-<p>(知识拓展,了解即可)</p>
-<p>为什么主分区不能超过4个</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Linux 中主分区不能超过四个的原因是因为主分区是由 BIOS 引导程序读取的，而 BIOS 只能识别 MBR（主引导记录）中最多 4 个主分区的信息。</span><br><span class="line"></span><br><span class="line">MBR 是在硬盘的第一个扇区中存储的，它包含了硬盘的分区信息和系统引导程序。MBR 的大小是固定的，只有 446 字节，其中 63 字节用来存储系统引导程序，剩下的用来存储硬盘分区信息。每个分区信息占用 16 字节。因此，最多只能有 4 个主分区（4*16=64）。</span><br><span class="line"></span><br><span class="line">而对于超过4个的分区，可以使用逻辑分区来解决。逻辑分区是在一个主分区内部划分出来的，并不占用主分区的限制。</span><br><span class="line"></span><br><span class="line">总结来说，主分区最多只能有 4 个的原因是由于 MBR 的大小限制造成的。</span><br></pre></td></tr></table></figure>
-
-<h4 id="2-mount挂载分区"><a href="#2-mount挂载分区" class="headerlink" title="2. mount挂载分区"></a>2. mount挂载分区</h4><p>是 Linux 系统中用来挂载分区或者文件系统的命令。挂载的作用是将一个文件系统连接到某一目录上，这样用户就可以通过访问这个目录来访问文件系统上的文件。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">mount 命令的一般语法是：</span><br><span class="line"></span><br><span class="line">mount [options] device directory</span><br><span class="line"></span><br><span class="line">该device参数指定要挂载的设备或分区。这可以是设备文件（例如 /dev/sda1）、UUID 或 LABEL。</span><br><span class="line">directory参数是文件系统上要挂载设备的位置。这通常称为挂载点。</span><br><span class="line">该options参数指定您在安装设备时要使用的任何其他选项。一些常见的选项包括rw（读写）、ro（只读）和auto（在启动时自动挂载）。</span><br><span class="line"></span><br><span class="line">比如你在/dev/sda1上有一个分区，你想挂载到/mnt目录下，可以使用如下命令：</span><br><span class="line"></span><br><span class="line">mount /dev/sda1 /mnt</span><br><span class="line"></span><br><span class="line">这会将位于 /dev/sda1 的分区挂载到 /mnt 目录，使其可以读写。</span><br><span class="line"></span><br><span class="line">请注意，您需要是超级用户或具有适当的权限才能挂载或卸载分区。</span><br></pre></td></tr></table></figure>
-
-
-
-<h4 id="3-umount卸载命令"><a href="#3-umount卸载命令" class="headerlink" title="3. umount卸载命令"></a>3. umount卸载命令</h4><p>umount 命令在 Linux 中用于卸载当前挂载的文件系统或分区。此命令与 mount 命令相反，允许您从文件系统中安全地删除设备或分区。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">umount 命令的一般语法是：</span><br><span class="line">umount [options] directory</span><br><span class="line"></span><br><span class="line">directory参数是当前安装设备的文件系统位置。这通常称为挂载点。</span><br><span class="line">该options参数指定卸载设备时要使用的任何其他选项。	</span><br><span class="line">例如，如果 /dev/sda1 上有一个分区当前挂载在 /mnt 目录下，则可以使用以下命令：</span><br><span class="line">umount /mnt</span><br><span class="line">这将从 /mnt 目录中卸载位于 /dev/sda1 上的分区，使其不再可读写。</span><br><span class="line"></span><br><span class="line">请注意，您需要是超级用户或具有适当的权限才能卸载分区。此外，您无法卸载当前正在使用的分区。</span><br></pre></td></tr></table></figure>
-<h2 id="单元六-软件包的安装与管理"><a href="#单元六-软件包的安装与管理" class="headerlink" title="单元六 软件包的安装与管理"></a>单元六 软件包的安装与管理</h2><h3 id="考点-4"><a href="#考点-4" class="headerlink" title="考点:"></a>考点:</h3><h4 id="1-RPM包管理系统"><a href="#1-RPM包管理系统" class="headerlink" title="1. RPM包管理系统"></a>1. RPM包管理系统</h4><p>RPM（Red Hat Package Manager）是 Red Hat、Fedora 和 CentOS 等 Linux 发行版使用的包管理系统。它用于在 Linux 系统上安装、更新和删除软件包。</p>
+<h4 id="4-课后题必考"><a class="markdownIt-Anchor" href="#4-课后题必考">#</a> 4. 课后题 (必考)</h4>
+<p>linux 中什么命令可以用来检测用户 lisa 的信息？</p>
+<p>A. finger lisa	B. grep lisa 	/etc/password	C. find lisa /etc/password	D. who lisa</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>这些些命令可以用来检测用户信息，如：</pre></td></tr><tr><td data-num="2"></td><td><pre>finger 命令</pre></td></tr><tr><td data-num="3"></td><td><pre>getent 命令</pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token function">grep</span> 命令</pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token function">cat</span> /etc/passwd 命令</pre></td></tr><tr><td data-num="6"></td><td><pre>这些命令都可以用来查看用户的相关信息。</pre></td></tr></table></figure><h2 id="单元五-管理磁盘"><a class="markdownIt-Anchor" href="#单元五-管理磁盘">#</a> 单元五 管理磁盘</h2>
+<h3 id="考点-5"><a class="markdownIt-Anchor" href="#考点-5">#</a> 考点</h3>
+<h4 id="1-硬盘分区相关知识"><a class="markdownIt-Anchor" href="#1-硬盘分区相关知识">#</a> 1. 硬盘分区相关知识</h4>
+<p>扩展分区：并不是一个真正的分区，而更像是一个占用了 16 字节分区表空间的指针 ---- 一个指向另一个分区的指针</p>
+<p>用户一般会选择使用 3 个主分区 (Primary’) 加一个扩展分区 (Extended) 的方法，然后再扩展分区中创建出数个逻辑分区 (Logical), 从而来满足多分区 (大于 4 个) 的需求.</p>
+<p>磁盘容量 = 主分区 + 扩展分区</p>
+<p>(知识拓展，了解即可)</p>
+<p>为什么主分区不能超过 4 个</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>Linux 中主分区不能超过四个的原因是因为主分区是由 BIOS 引导程序读取的，而 BIOS 只能识别 MBR（主引导记录）中最多 <span class="token number">4</span> 个主分区的信息。</pre></td></tr><tr><td data-num="2"></td><td><pre></pre></td></tr><tr><td data-num="3"></td><td><pre>MBR 是在硬盘的第一个扇区中存储的，它包含了硬盘的分区信息和系统引导程序。MBR 的大小是固定的，只有 <span class="token number">446</span> 字节，其中 <span class="token number">63</span> 字节用来存储系统引导程序，剩下的用来存储硬盘分区信息。每个分区信息占用 <span class="token number">16</span> 字节。因此，最多只能有 <span class="token number">4</span> 个主分区（4*16<span class="token operator">=</span><span class="token number">64</span>）。</pre></td></tr><tr><td data-num="4"></td><td><pre></pre></td></tr><tr><td data-num="5"></td><td><pre>而对于超过4个的分区，可以使用逻辑分区来解决。逻辑分区是在一个主分区内部划分出来的，并不占用主分区的限制。</pre></td></tr><tr><td data-num="6"></td><td><pre></pre></td></tr><tr><td data-num="7"></td><td><pre>总结来说，主分区最多只能有 <span class="token number">4</span> 个的原因是由于 MBR 的大小限制造成的。</pre></td></tr></table></figure><h4 id="2-mount挂载分区"><a class="markdownIt-Anchor" href="#2-mount挂载分区">#</a> 2. mount 挂载分区</h4>
+<p>是 Linux 系统中用来挂载分区或者文件系统的命令。挂载的作用是将一个文件系统连接到某一目录上，这样用户就可以通过访问这个目录来访问文件系统上的文件。</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token function">mount</span> 命令的一般语法是：</pre></td></tr><tr><td data-num="2"></td><td><pre></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token function">mount</span> <span class="token punctuation">[</span>options<span class="token punctuation">]</span> device directory</pre></td></tr><tr><td data-num="4"></td><td><pre></pre></td></tr><tr><td data-num="5"></td><td><pre>该device参数指定要挂载的设备或分区。这可以是设备文件（例如 /dev/sda1）、UUID 或 LABEL。</pre></td></tr><tr><td data-num="6"></td><td><pre>directory参数是文件系统上要挂载设备的位置。这通常称为挂载点。</pre></td></tr><tr><td data-num="7"></td><td><pre>该options参数指定您在安装设备时要使用的任何其他选项。一些常见的选项包括rw（读写）、ro（只读）和auto（在启动时自动挂载）。</pre></td></tr><tr><td data-num="8"></td><td><pre></pre></td></tr><tr><td data-num="9"></td><td><pre>比如你在/dev/sda1上有一个分区，你想挂载到/mnt目录下，可以使用如下命令：</pre></td></tr><tr><td data-num="10"></td><td><pre></pre></td></tr><tr><td data-num="11"></td><td><pre><span class="token function">mount</span> /dev/sda1 /mnt</pre></td></tr><tr><td data-num="12"></td><td><pre></pre></td></tr><tr><td data-num="13"></td><td><pre>这会将位于 /dev/sda1 的分区挂载到 /mnt 目录，使其可以读写。</pre></td></tr><tr><td data-num="14"></td><td><pre></pre></td></tr><tr><td data-num="15"></td><td><pre>请注意，您需要是超级用户或具有适当的权限才能挂载或卸载分区。</pre></td></tr></table></figure><h4 id="3-umount卸载命令"><a class="markdownIt-Anchor" href="#3-umount卸载命令">#</a> 3. umount 卸载命令</h4>
+<p>umount 命令在 Linux 中用于卸载当前挂载的文件系统或分区。此命令与 mount 命令相反，允许您从文件系统中安全地删除设备或分区。</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token function">umount</span> 命令的一般语法是：</pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token function">umount</span> <span class="token punctuation">[</span>options<span class="token punctuation">]</span> directory</pre></td></tr><tr><td data-num="3"></td><td><pre></pre></td></tr><tr><td data-num="4"></td><td><pre>directory参数是当前安装设备的文件系统位置。这通常称为挂载点。</pre></td></tr><tr><td data-num="5"></td><td><pre>该options参数指定卸载设备时要使用的任何其他选项。	</pre></td></tr><tr><td data-num="6"></td><td><pre>例如，如果 /dev/sda1 上有一个分区当前挂载在 /mnt 目录下，则可以使用以下命令：</pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token function">umount</span> /mnt</pre></td></tr><tr><td data-num="8"></td><td><pre>这将从 /mnt 目录中卸载位于 /dev/sda1 上的分区，使其不再可读写。</pre></td></tr><tr><td data-num="9"></td><td><pre></pre></td></tr><tr><td data-num="10"></td><td><pre>请注意，您需要是超级用户或具有适当的权限才能卸载分区。此外，您无法卸载当前正在使用的分区。</pre></td></tr></table></figure><h2 id="单元六-软件包的安装与管理"><a class="markdownIt-Anchor" href="#单元六-软件包的安装与管理">#</a> 单元六 软件包的安装与管理</h2>
+<h3 id="考点-6"><a class="markdownIt-Anchor" href="#考点-6">#</a> 考点:</h3>
+<h4 id="1-rpm包管理系统"><a class="markdownIt-Anchor" href="#1-rpm包管理系统">#</a> 1. RPM 包管理系统</h4>
+<p>RPM（Red Hat Package Manager）是 Red Hat、Fedora 和 CentOS 等 Linux 发行版使用的包管理系统。它用于在 Linux 系统上安装、更新和删除软件包。</p>
 <p>RPM 包的文件扩展名为 .rpm，包含在 Linux 系统上安装软件包所需的所有文件和信息。该包包括文件本身，以及关于包的元数据，例如它的名称、版本和依赖项。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">用于处理 RPM 包的主要命令是rpm命令。该命令的一些最常见用途rpm包括：</span><br><span class="line"></span><br><span class="line">rpm -i package.rpm: 该命令用于在 Linux 系统上安装 RPM 包。</span><br><span class="line">rpm -U package.rpm：此命令用于将现有包升级到更新版本。(U可用upgrade代替,效果一样)</span><br><span class="line">rpm -V|Va package.rpm:该rpm命令将根据包的原始元数据验证已安装包的完整性。这对于确保包在安装后未被篡改或修改很有用。</span><br><span class="line">rpm -e package：此命令用于从 Linux 系统中删除已安装的软件包。</span><br><span class="line">rpm -q package: 该命令用于查询软件包的信息，如名称、版本、安装位置等。</span><br><span class="line">rpm -ql package: 该命令用于列出已安装包中包含的文件。</span><br><span class="line">RPM 包还包括依赖项，这意味着当你安装一个包时，它也会安装主包所依赖的所有包。当您卸载一个包时，它也会卸载依赖于该包的所有包。</span><br><span class="line"></span><br><span class="line">请注意，RPM 主要用于基于 Red Hat 的发行版，基于 Debian 的发行版如 Ubuntu、Debian、Mint 使用dpkg包管理器，其命令是dpkg.</span><br></pre></td></tr></table></figure>
-
-<h2 id="单元七-Linux系统监视与进程管理"><a href="#单元七-Linux系统监视与进程管理" class="headerlink" title="单元七 Linux系统监视与进程管理"></a>单元七 Linux系统监视与进程管理</h2><h3 id="考点-5"><a href="#考点-5" class="headerlink" title="考点"></a>考点</h3><h4 id="1-at调度-必考"><a href="#1-at调度-必考" class="headerlink" title="1. at调度(必考)"></a>1. at调度(必考)</h4><p>该<code>at</code>命令用于安排命令或脚本在将来的特定时间运行。该命令可用于安排一次性任务或重复性任务。</p>
-<p>该<code>at</code>命令的基本语法如下：</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>用于处理 RPM 包的主要命令是rpm命令。该命令的一些最常见用途rpm包括：</pre></td></tr><tr><td data-num="2"></td><td><pre></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token function">rpm</span> <span class="token parameter variable">-i</span> package.rpm: 该命令用于在 Linux 系统上安装 RPM 包。</pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token function">rpm</span> <span class="token parameter variable">-U</span> package.rpm：此命令用于将现有包升级到更新版本。<span class="token punctuation">(</span>U可用upgrade代替,效果一样<span class="token punctuation">)</span></pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token function">rpm</span> -V<span class="token operator">|</span>Va package.rpm:该rpm命令将根据包的原始元数据验证已安装包的完整性。这对于确保包在安装后未被篡改或修改很有用。</pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token function">rpm</span> <span class="token parameter variable">-e</span> package：此命令用于从 Linux 系统中删除已安装的软件包。</pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token function">rpm</span> <span class="token parameter variable">-q</span> package: 该命令用于查询软件包的信息，如名称、版本、安装位置等。</pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token function">rpm</span> <span class="token parameter variable">-ql</span> package: 该命令用于列出已安装包中包含的文件。</pre></td></tr><tr><td data-num="9"></td><td><pre>RPM 包还包括依赖项，这意味着当你安装一个包时，它也会安装主包所依赖的所有包。当您卸载一个包时，它也会卸载依赖于该包的所有包。</pre></td></tr><tr><td data-num="10"></td><td><pre></pre></td></tr><tr><td data-num="11"></td><td><pre>请注意，RPM 主要用于基于 Red Hat 的发行版，基于 Debian 的发行版如 Ubuntu、Debian、Mint 使用dpkg包管理器，其命令是dpkg.</pre></td></tr></table></figure><h2 id="单元七-linux系统监视与进程管理"><a class="markdownIt-Anchor" href="#单元七-linux系统监视与进程管理">#</a> 单元七 Linux 系统监视与进程管理</h2>
+<h3 id="考点-7"><a class="markdownIt-Anchor" href="#考点-7">#</a> 考点</h3>
+<h4 id="1-at调度必考"><a class="markdownIt-Anchor" href="#1-at调度必考">#</a> 1. at 调度 (必考)</h4>
+<p>该 <code>at</code>  命令用于安排命令或脚本在将来的特定时间运行。该命令可用于安排一次性任务或重复性任务。</p>
+<p>该 <code>at</code>  命令的基本语法如下：</p>
 <p>at [time]</p>
-<p><code>time</code>任务应该执行的具体时间在哪里，以几种格式之一指定。例如，您可以指定特定时间，例如<code>3:00 PM</code>，也可以使用相对时间，例如<code>now + 1 hour</code>。</p>
-<p>输入<code>at</code>命令后，系统将提示您输入要在指定时间运行的命令或脚本。输入命令后，按<code>CTRL+D</code>提交任务。</p>
-<p>您还可以使用该<code>atq</code>命令查看所有计划任务的列表，并使用该<code>atrm</code>命令删除计划任务。</p>
-<p>注意:at调度和batch调度指定的命令只能运行一次(batch和at的区别就是不指定运行时间,进程将在比较空闲时候运行)</p>
-<h4 id="2-corn"><a href="#2-corn" class="headerlink" title="2. corn"></a>2. corn</h4><p>Cron 是一种 Linux 实用程序，可让您安排任务（也称为 cron 作业）在特定时间或间隔自动执行。cron 守护程序或 crond 在后台运行并检查 crontab（cron 表）是否有任何计划任务。如果安排了任务，cron 守护进程将在指定的时间执行它。</p>
+<p><code>time</code>  任务应该执行的具体时间在哪里，以几种格式之一指定。例如，您可以指定特定时间，例如 <code>3:00 PM</code> ，也可以使用相对时间，例如 <code>now + 1 hour</code> 。</p>
+<p>输入 <code>at</code>  命令后，系统将提示您输入要在指定时间运行的命令或脚本。输入命令后，按 <code>CTRL+D</code>  提交任务。</p>
+<p>您还可以使用该 <code>atq</code>  命令查看所有计划任务的列表，并使用该 <code>atrm</code>  命令删除计划任务。</p>
+<p>注意:at 调度和 batch 调度指定的命令只能运行一次 (batch 和 at 的区别就是不指定运行时间，进程将在比较空闲时候运行)</p>
+<h4 id="2-corn"><a class="markdownIt-Anchor" href="#2-corn">#</a> 2. corn</h4>
+<p>Cron 是一种 Linux 实用程序，可让您安排任务（也称为 cron 作业）在特定时间或间隔自动执行。cron 守护程序或 crond 在后台运行并检查 crontab（cron 表）是否有任何计划任务。如果安排了任务，cron 守护进程将在指定的时间执行它。</p>
 <p>crontab 文件是指定 cron 作业时间表的配置文件，用于设置和管理 cron 任务。crontab 文件中的每一行代表一个 cron 作业，其计划以下列格式指定：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">* * * * * <span class="built_in">command</span></span><br><span class="line">- - - - -</span><br><span class="line">| | | | |</span><br><span class="line">| | | | ----- Day of week (0 - 7) (Sunday = both 0 and 7)</span><br><span class="line">| | | ------- Month (1 - 12)</span><br><span class="line">| | --------- Day of month (1 - 31)</span><br><span class="line">| ----------- Hour (0 - 23)</span><br><span class="line">------------- Minute (0 - 59)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>* * * * * <span class="token builtin class-name">command</span></pre></td></tr><tr><td data-num="2"></td><td><pre>- - - - -</pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token operator">|</span> <span class="token operator">|</span> <span class="token operator">|</span> <span class="token operator">|</span> <span class="token operator">|</span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token operator">|</span> <span class="token operator">|</span> <span class="token operator">|</span> <span class="token operator">|</span> ----- Day of week <span class="token punctuation">(</span><span class="token number">0</span> - <span class="token number">7</span><span class="token punctuation">)</span> <span class="token punctuation">(</span>Sunday <span class="token operator">=</span> both <span class="token number">0</span> and <span class="token number">7</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token operator">|</span> <span class="token operator">|</span> <span class="token operator">|</span> ------- Month <span class="token punctuation">(</span><span class="token number">1</span> - <span class="token number">12</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="6"></td><td><pre><span class="token operator">|</span> <span class="token operator">|</span> --------- Day of month <span class="token punctuation">(</span><span class="token number">1</span> - <span class="token number">31</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token operator">|</span> ----------- Hour <span class="token punctuation">(</span><span class="token number">0</span> - <span class="token number">23</span><span class="token punctuation">)</span></pre></td></tr><tr><td data-num="8"></td><td><pre>------------- Minute <span class="token punctuation">(</span><span class="token number">0</span> - <span class="token number">59</span><span class="token punctuation">)</span></pre></td></tr></table></figure><p>例如，crontab 文件中的一行如下所示：</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token number">0</span> <span class="token number">0</span> * * * /usr/local/bin/my-script.sh</pre></td></tr><tr><td data-num="2"></td><td><pre>该行将在每天午夜运行脚本 /usr/local/bin/my-script.sh。</pre></td></tr></table></figure><pre><code>每天早上6点执行脚本：
+0 6 * * * /path/to/script.sh
 
-<p>例如，crontab 文件中的一行如下所示：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">0 0 * * * /usr/local/bin/my-script.sh</span><br><span class="line">该行将在每天午夜运行脚本 /usr/local/bin/my-script.sh。</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+每周一和周三的下午4点执行脚本：
+0 16 * * 1,3 /path/to/script.sh
 
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">每天早上6点执行脚本：</span><br><span class="line">0 6 * * * /path/to/script.sh</span><br><span class="line"></span><br><span class="line">每周一和周三的下午4点执行脚本：</span><br><span class="line">0 16 * * 1,3 /path/to/script.sh</span><br><span class="line"></span><br><span class="line">每隔2小时执行一次脚本：</span><br><span class="line">0 */2 * * * /path/to/script.sh</span><br><span class="line"></span><br><span class="line">每月1日和15日的上午9点执行脚本：</span><br><span class="line">0 9 1,15 * * /path/to/script.sh</span><br><span class="line"></span><br><span class="line">每年12月31日晚上11点执行脚本：</span><br><span class="line">0 23 31 12 * /path/to/script.sh</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+每隔2小时执行一次脚本：
+0 */2 * * * /path/to/script.sh
 
+每月1日和15日的上午9点执行脚本：
+0 9 1,15 * * /path/to/script.sh
 
+每年12月31日晚上11点执行脚本：
+0 23 31 12 * /path/to/script.sh
 
-<h4 id="3-监视进程"><a href="#3-监视进程" class="headerlink" title="3. 监视进程"></a>3. 监视进程</h4><ol>
-<li><p>ps命令(是静态的)</p>
-<p>命令（“进程状态”的<code>ps</code>缩写）是 Linux 中的命令行实用程序，可显示有关系统上运行的进程的信息。默认情况下，<code>ps</code>将显示有关在当前终端会话中运行的进程的信息。</p>
-<p>该<code>ps</code>命令的基本语法是：</p>
+</code></pre>
+<h4 id="3-监视进程"><a class="markdownIt-Anchor" href="#3-监视进程">#</a> 3. 监视进程</h4>
+<ol>
+<li>
+<p>ps 命令 (是静态的)</p>
+<p>命令（“进程状态” 的 <code>ps</code>  缩写）是 Linux 中的命令行实用程序，可显示有关系统上运行的进程的信息。默认情况下， <code>ps</code>  将显示有关在当前终端会话中运行的进程的信息。</p>
+<p>该 <code>ps</code>  命令的基本语法是：</p>
 <p>ps [options]</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">最常用的选项ps包括：</span><br><span class="line"></span><br><span class="line">-ef|-e: 显示系统上运行的所有进程</span><br><span class="line">-aux: 显示所有用户的所有进程</span><br><span class="line">-u: 显示运行进程的用户信息</span><br><span class="line">-p: 按PID显示特定进程的信息</span><br><span class="line">例如，该命令ps -ef将显示系统上运行的所有进程，包括进程ID、用户、进程名称和命令。</span><br><span class="line"></span><br><span class="line">您还可以使用ps -aux来显示系统上运行的所有进程，包括进程 ID、用户、CPU 使用率、内存使用率和其他详细信息。</span><br><span class="line"></span><br><span class="line">也可以使用grep命令过滤命令的输出，ps只显示你感兴趣的进程。</span><br><span class="line"></span><br><span class="line">请注意，ps默认情况下显示当前终端会话中运行的进程，如果你想查看系统上运行的所有进程，你需要使用 -ef 或 -aux 等选项。</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>top命令(是动态的,可刷新)</p>
-<p><code>top</code>命令是 Linux 中的系统监视实用程序，可<strong>实时显示</strong>有关系统上运行的进程的信息。它提供系统上运行的进程的<strong>动态、实时视图</strong>，包括进程 ID、用户、CPU 使用率、内存使用率和其他详细信息。</p>
-<p>当您运行该<code>top</code>命令时，它将显示系统上当前正在运行的进程列表，使用最多 CPU 的进程位于列表顶部。该列表是实时更新的，因此您可以看到系统的资源使用情况如何随时间变化。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">可与该top命令一起使用的一些常见选项和参数包括：</span><br><span class="line"></span><br><span class="line">-d：指定更新之间的延迟，以秒为单位。例如，top -d 5将每 5 秒更新一次显示。</span><br><span class="line">-p：显示特定进程 ID 的进程。例如，top -p 1234将显示 ID 为 1234 的进程的信息。</span><br><span class="line">-u：显示特定用户的进程。例如，top -u root将显示以 root 用户身份运行的所有进程的信息。</span><br><span class="line">-n：迭代次数。例如，top -n 2只会运行命令 2 次然后退出。</span><br><span class="line">-o：指定排序字段。例如，top -o %MEM将根据内存使用情况对进程进行排序</span><br><span class="line">-h：显示帮助信息</span><br><span class="line">q: 退出top命令</span><br><span class="line">k: 通过PID杀死一个进程</span><br><span class="line">r：Renice一个过程的PID</span><br><span class="line">s：更改刷新间隔</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>kill命令(必考)</p>
-<p>该<code>kill</code>命令用于向进程发送信号以终止进程或更改其行为。</p>
-<p>默认情况下，<code>kill</code>发送<code>SIGTERM</code>信号，要求进程正常终止。该命令的基本语法是：</p>
-<p>kill [signal] PID</p>
-<p>哪里<code>signal</code>是你要发送的信号，<code>PID</code>是你要终止的进程的进程ID。如果未指定信号，<code>SIGTERM</code>则使用。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">可以发送的一些常见信号<span class="built_in">kill</span>包括：</span><br><span class="line"></span><br><span class="line">SIGTERM(15)(默认) - 要求进程正常终止</span><br><span class="line">SIGKILL(9) - 强制进程立即终止</span><br><span class="line">SIGSTOP(19) - 停止进程</span><br><span class="line">SIGCONT(18) - 继续停止的进程</span><br></pre></td></tr></table></figure>
+<pre><code>最常用的选项ps包括：
 
-<p>kill命令终止的是后台命令,终止一个前台命令可以用Ctrl+c组合键</p>
+-ef|-e: 显示系统上运行的所有进程
+-aux: 显示所有用户的所有进程
+-u: 显示运行进程的用户信息
+-p: 按PID显示特定进程的信息
+例如，该命令ps -ef将显示系统上运行的所有进程，包括进程ID、用户、进程名称和命令。
+
+您还可以使用ps -aux来显示系统上运行的所有进程，包括进程 ID、用户、CPU 使用率、内存使用率和其他详细信息。
+
+也可以使用grep命令过滤命令的输出，ps只显示你感兴趣的进程。
+
+请注意，ps默认情况下显示当前终端会话中运行的进程，如果你想查看系统上运行的所有进程，你需要使用 -ef 或 -aux 等选项。
+</code></pre>
+</li>
+<li>
+<p>top 命令 (是动态的，可刷新)</p>
+<p><code>top</code>  命令是 Linux 中的系统监视实用程序，可<strong>实时显示</strong>有关系统上运行的进程的信息。它提供系统上运行的进程的<strong>动态、实时视图</strong>，包括进程 ID、用户、CPU 使用率、内存使用率和其他详细信息。</p>
+<p>当您运行该 <code>top</code>  命令时，它将显示系统上当前正在运行的进程列表，使用最多 CPU 的进程位于列表顶部。该列表是实时更新的，因此您可以看到系统的资源使用情况如何随时间变化。</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>可与该top命令一起使用的一些常见选项和参数包括：</pre></td></tr><tr><td data-num="2"></td><td><pre></pre></td></tr><tr><td data-num="3"></td><td><pre>-d：指定更新之间的延迟，以秒为单位。例如，top <span class="token parameter variable">-d</span> <span class="token number">5</span>将每 <span class="token number">5</span> 秒更新一次显示。</pre></td></tr><tr><td data-num="4"></td><td><pre>-p：显示特定进程 ID 的进程。例如，top <span class="token parameter variable">-p</span> <span class="token number">1234</span>将显示 ID 为 <span class="token number">1234</span> 的进程的信息。</pre></td></tr><tr><td data-num="5"></td><td><pre>-u：显示特定用户的进程。例如，top <span class="token parameter variable">-u</span> root将显示以 root 用户身份运行的所有进程的信息。</pre></td></tr><tr><td data-num="6"></td><td><pre>-n：迭代次数。例如，top <span class="token parameter variable">-n</span> <span class="token number">2</span>只会运行命令 <span class="token number">2</span> 次然后退出。</pre></td></tr><tr><td data-num="7"></td><td><pre>-o：指定排序字段。例如，top <span class="token parameter variable">-o</span> %MEM将根据内存使用情况对进程进行排序</pre></td></tr><tr><td data-num="8"></td><td><pre>-h：显示帮助信息</pre></td></tr><tr><td data-num="9"></td><td><pre>q: 退出top命令</pre></td></tr><tr><td data-num="10"></td><td><pre>k: 通过PID杀死一个进程</pre></td></tr><tr><td data-num="11"></td><td><pre>r：Renice一个过程的PID</pre></td></tr><tr><td data-num="12"></td><td><pre>s：更改刷新间隔</pre></td></tr></table></figure></li>
+<li>
+<p>kill 命令 (必考)</p>
+<p>该 <code>kill</code>  命令用于向进程发送信号以终止进程或更改其行为。</p>
+<p>默认情况下， <code>kill</code>  发送 <code>SIGTERM</code>  信号，要求进程正常终止。该命令的基本语法是：</p>
+<p>kill [signal] PID</p>
+<p>哪里 <code>signal</code>  是你要发送的信号， <code>PID</code>  是你要终止的进程的进程 ID。如果未指定信号， <code>SIGTERM</code>  则使用。</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre>可以发送的一些常见信号kill包括：</pre></td></tr><tr><td data-num="2"></td><td><pre></pre></td></tr><tr><td data-num="3"></td><td><pre>SIGTERM<span class="token punctuation">(</span><span class="token number">15</span><span class="token punctuation">)</span><span class="token punctuation">(</span>默认<span class="token punctuation">)</span> - 要求进程正常终止</pre></td></tr><tr><td data-num="4"></td><td><pre>SIGKILL<span class="token punctuation">(</span><span class="token number">9</span><span class="token punctuation">)</span> - 强制进程立即终止</pre></td></tr><tr><td data-num="5"></td><td><pre>SIGSTOP<span class="token punctuation">(</span><span class="token number">19</span><span class="token punctuation">)</span> - 停止进程</pre></td></tr><tr><td data-num="6"></td><td><pre>SIGCONT<span class="token punctuation">(</span><span class="token number">18</span><span class="token punctuation">)</span> - 继续停止的进程</pre></td></tr></table></figure><p>kill 命令终止的是后台命令，终止一个前台命令可以用 Ctrl+c 组合键</p>
 </li>
 </ol>
-<h4 id="4-启动-切换进程或作业"><a href="#4-启动-切换进程或作业" class="headerlink" title="4. 启动,切换进程或作业"></a>4. 启动,切换进程或作业</h4><ol>
-<li><p>手动启动:指用户输入Shell命令直接启动进程,又分<strong>前台启动</strong>和<strong>后台启动</strong>.</p>
-<p>在输入的Shell命令末尾加上&amp;符号,再按Enter键,可启动一个<strong>后台作业</strong></p>
-</li>
-<li><p>作业的前后台切换</p>
+<h4 id="4-启动切换进程或作业"><a class="markdownIt-Anchor" href="#4-启动切换进程或作业">#</a> 4. 启动，切换进程或作业</h4>
 <ol>
-<li><p>bg命令</p>
-<p>bg命令用于将当前正在后台运行的任务转移到前台运行。例如，如果您正在运行一个长时间运行的命令，并且希望在继续使用终端时将其转移到前台，则可以使用bg命令。</p>
-<p>格式：bg [jobspec]。如果没有指定jobspec(表示一个特定的进程)，则默认转移最后一个后台任务。</p>
-<p>作业号一般是通过jobs命令查到的后台正在执行的命令的序号(不是pid)</p>
-<p>例:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#jobs</span></span><br><span class="line"></span><br><span class="line">[1]+ Running /root/bin/rsync.sh &amp;</span><br></pre></td></tr></table></figure>
-
-
+<li>
+<p>手动启动：指用户输入 Shell 命令直接启动进程，又分<strong>前台启动</strong>和<strong>后台启动</strong>.</p>
+<p>在输入的 Shell 命令末尾加上 &amp; 符号，再按 Enter 键，可启动一个<strong>后台作业</strong></p>
 </li>
-<li><p>fg命令</p>
-<p>fg命令是Linux中用来将后台进程放到前台执行的命令。</p>
+<li>
+<p>作业的前后台切换</p>
+<ol>
+<li>
+<p>bg 命令</p>
+<p>bg 命令用于将当前正在后台运行的任务转移到前台运行。例如，如果您正在运行一个长时间运行的命令，并且希望在继续使用终端时将其转移到前台，则可以使用 bg 命令。</p>
+<p>格式：bg [jobspec]。如果没有指定 jobspec (表示一个特定的进程)，则默认转移最后一个后台任务。</p>
+<p>作业号一般是通过 jobs 命令查到的后台正在执行的命令的序号 (不是 pid)</p>
+<p>例:</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment">#jobs</span></pre></td></tr><tr><td data-num="2"></td><td><pre></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span>+ Running /root/bin/rsync.sh <span class="token operator">&amp;</span></pre></td></tr></table></figure></li>
+<li>
+<p>fg 命令</p>
+<p>fg 命令是 Linux 中用来将后台进程放到前台执行的命令。</p>
 <p>该命令的格式为：</p>
 <p>fg [jobspec]</p>
-<p>其中，jobspec可以是一个进程的PID或者是一个运行在后台的进程的job ID。如果不指定jobspec，则fg命令会将最后一个运行在后台的进程放到前台。当进程在前台运行时，用户可以对该进程进行控制，例如使用Ctrl+C终止进程等。</p>
-<p>例如：fg %1 将job ID为1的进程放到前台执行(%1为是通过jobs命令查到的后台正在执行的命令的序号)</p>
+<p>其中，jobspec 可以是一个进程的 PID 或者是一个运行在后台的进程的 job ID。如果不指定 jobspec，则 fg 命令会将最后一个运行在后台的进程放到前台。当进程在前台运行时，用户可以对该进程进行控制，例如使用 Ctrl+C 终止进程等。</p>
+<p>例如：fg %1 将 job ID 为 1 的进程放到前台执行 (%1 为是通过 jobs 命令查到的后台正在执行的命令的序号)</p>
 </li>
 </ol>
 </li>
 </ol>
-<h2 id="单元九-Shell编程-Shell-script"><a href="#单元九-Shell编程-Shell-script" class="headerlink" title="单元九 Shell编程-Shell script"></a>单元九 Shell编程-Shell script</h2><h3 id="考点-6"><a href="#考点-6" class="headerlink" title="考点"></a>考点</h3><h4 id="1-Shell脚本的建立和执行"><a href="#1-Shell脚本的建立和执行" class="headerlink" title="1. Shell脚本的建立和执行"></a>1. Shell脚本的建立和执行</h4><p>Shell脚本是在 Linux 或 UNIX 系统中使用的一种脚本语言，可以用来自动化系统任务或重复性任务。它包括一组命令，这些命令在一起执行一个任务。(不需要编译,可直接执行,解释执行)</p>
+<h2 id="单元九-shell编程-shell-script"><a class="markdownIt-Anchor" href="#单元九-shell编程-shell-script">#</a> 单元九 Shell 编程 - Shell script</h2>
+<h3 id="考点-8"><a class="markdownIt-Anchor" href="#考点-8">#</a> 考点</h3>
+<h4 id="1-shell脚本的建立和执行"><a class="markdownIt-Anchor" href="#1-shell脚本的建立和执行">#</a> 1. Shell 脚本的建立和执行</h4>
+<p>Shell 脚本是在 Linux 或 UNIX 系统中使用的一种脚本语言，可以用来自动化系统任务或重复性任务。它包括一组命令，这些命令在一起执行一个任务。(不需要编译，可直接执行，解释执行)</p>
 <p>建立 Shell 脚本的方法：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1.使用文本编辑器（如 vi、nano、gedit 等）创建一个新文件，并在其中输入所需的命令。</span><br><span class="line">2.在第一行添加一个特殊的行，即 “<span class="comment">#! /bin/bash” 或 “#! /bin/sh”，这样系统就知道该文件是一个 Shell 脚本。</span></span><br></pre></td></tr></table></figure>
-
-<p>注意:#! &#x2F;bin&#x2F;bash 是一种特殊的注释,#是注释,!告诉Shell执行感叹号之后的命令。它告诉系统该脚本应该用 &#x2F;bin&#x2F;bash 来执行。这样做是为了确保脚本使用的是bash shell，而不是其他的shell。</p>
-<h4 id="2-文件测试符"><a href="#2-文件测试符" class="headerlink" title="2. 文件测试符"></a>2. 文件测试符</h4><p>文件测试符是 Linux 中常用的条件判断命令，它可以对文件进行各种属性的测试，并根据测试结果返回 true 或 false。</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token number">1</span>.使用文本编辑器（如 vi、nano、gedit 等）创建一个新文件，并在其中输入所需的命令。</pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token number">2</span>.在第一行添加一个特殊的行，即 “<span class="token comment">#! /bin/bash” 或 “#! /bin/sh”，这样系统就知道该文件是一个 Shell 脚本。</span></pre></td></tr></table></figure><p>注意:#! /bin/bash 是一种特殊的注释，# 是注释，！告诉 Shell 执行感叹号之后的命令。它告诉系统该脚本应该用 /bin/bash 来执行。这样做是为了确保脚本使用的是 bash shell，而不是其他的 shell。</p>
+<h4 id="2-文件测试符"><a class="markdownIt-Anchor" href="#2-文件测试符">#</a> 2. 文件测试符</h4>
+<p>文件测试符是 Linux 中常用的条件判断命令，它可以对文件进行各种属性的测试，并根据测试结果返回 true 或 false。</p>
 <ul>
-<li><strong>-e: 文件是否存在</strong>(可能会考)</li>
-<li><strong>-f: 是否为普通文件</strong>(可能会考)</li>
+<li><strong>-e: 文件是否存在</strong> (可能会考)</li>
+<li><strong>-f: 是否为普通文件</strong> (可能会考)</li>
 <li>-d: 是否为目录</li>
 <li>-r: 是否可读</li>
 <li>-w: 是否可写</li>
 <li>-x: 是否可执行</li>
 <li>-s: 文件大小是否大于 0</li>
 </ul>
-<p>使用方法是在文件前面加上测试符,如:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> [ -e <span class="string">&quot;/etc/passwd&quot;</span> ]; <span class="keyword">then</span></span><br><span class="line">  <span class="built_in">echo</span> <span class="string">&quot;passwd file exist&quot;</span></span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">  <span class="built_in">echo</span> <span class="string">&quot;passwd file not exist&quot;</span></span><br><span class="line"><span class="keyword">fi</span></span><br></pre></td></tr></table></figure>
+<p>使用方法是在文件前面加上测试符，如:</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">if</span> <span class="token punctuation">[</span> <span class="token parameter variable">-e</span> <span class="token string">"/etc/passwd"</span> <span class="token punctuation">]</span><span class="token punctuation">;</span> <span class="token keyword">then</span></pre></td></tr><tr><td data-num="2"></td><td><pre>  <span class="token builtin class-name">echo</span> <span class="token string">"passwd file exist"</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token keyword">else</span></pre></td></tr><tr><td data-num="4"></td><td><pre>  <span class="token builtin class-name">echo</span> <span class="token string">"passwd file not exist"</span></pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token keyword">fi</span></pre></td></tr></table></figure><h4 id="3-shell编程题"><a class="markdownIt-Anchor" href="#3-shell编程题">#</a> 3. Shell 编程题</h4>
+<ol>
+<li>
+<p>编写 Shell 脚本，计算 1-100 的和.</p>
+<p>以下代码是 chatgpt 给出，未验证正确性</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token shebang important">#!/bin/bash</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token comment"># This script is used to calculate the sum of numbers from 1 to 100</span></pre></td></tr><tr><td data-num="3"></td><td><pre></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token comment"># Initialize a variable named "sum" to store the result</span></pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token assign-left variable">sum</span><span class="token operator">=</span><span class="token number">0</span></pre></td></tr><tr><td data-num="6"></td><td><pre></pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token comment"># Use a for loop to iterate through the numbers from 1 to 100</span></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token keyword">for</span> <span class="token for-or-select variable">i</span> <span class="token keyword">in</span> <span class="token punctuation">&#123;</span><span class="token number">1</span><span class="token punctuation">..</span><span class="token number">100</span><span class="token punctuation">&#125;</span></pre></td></tr><tr><td data-num="9"></td><td><pre><span class="token keyword">do</span></pre></td></tr><tr><td data-num="10"></td><td><pre>    <span class="token comment"># Add the current number to the "sum" variable</span></pre></td></tr><tr><td data-num="11"></td><td><pre>    <span class="token assign-left variable">sum</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$((</span>sum <span class="token operator">+</span> i<span class="token variable">))</span></span></pre></td></tr><tr><td data-num="12"></td><td><pre><span class="token keyword">done</span></pre></td></tr><tr><td data-num="13"></td><td><pre></pre></td></tr><tr><td data-num="14"></td><td><pre><span class="token comment"># Print the final result</span></pre></td></tr><tr><td data-num="15"></td><td><pre><span class="token builtin class-name">echo</span> <span class="token string">"The sum of numbers from 1 to 100 is: <span class="token variable">$sum</span>"</span></pre></td></tr><tr><td data-num="16"></td><td><pre></pre></td></tr><tr><td data-num="17"></td><td><pre>第1行：<span class="token comment">#!/bin/bash 是脚本的第一行，表示这是一个 shell 脚本，并且使用 /bin/bash 来执行。</span></pre></td></tr><tr><td data-num="18"></td><td><pre></pre></td></tr><tr><td data-num="19"></td><td><pre>第3行：初始化变量 <span class="token function">sum</span> 为 <span class="token number">0</span>。</pre></td></tr><tr><td data-num="20"></td><td><pre></pre></td></tr><tr><td data-num="21"></td><td><pre>第5行：使用 <span class="token keyword">for</span> 循环迭代变量 i，从 <span class="token number">1</span> 到 <span class="token number">100</span>。</pre></td></tr><tr><td data-num="22"></td><td><pre></pre></td></tr><tr><td data-num="23"></td><td><pre>第7行：使用 <span class="token variable"><span class="token variable">$((</span>sum <span class="token operator">+</span> i<span class="token variable">))</span></span> 来计算当前的 i 值并将其加到 <span class="token function">sum</span> 变量中。</pre></td></tr><tr><td data-num="24"></td><td><pre></pre></td></tr><tr><td data-num="25"></td><td><pre>第9行：使用 <span class="token builtin class-name">echo</span> 打印出最终结果。</pre></td></tr></table></figure><p>我自己编写的，已验证正确性</p>
+<pre><code>#! /bin/bash
 
-<h4 id="3-Shell编程题"><a href="#3-Shell编程题" class="headerlink" title="3. Shell编程题"></a>3. Shell编程题</h4><ol>
-<li><p>编写Shell脚本,计算1-100的和.</p>
-<p>以下代码是chatgpt给出,未验证正确性</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"><span class="comment"># This script is used to calculate the sum of numbers from 1 to 100</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Initialize a variable named &quot;sum&quot; to store the result</span></span><br><span class="line"><span class="built_in">sum</span>=0</span><br><span class="line"></span><br><span class="line"><span class="comment"># Use a for loop to iterate through the numbers from 1 to 100</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> &#123;1..100&#125;</span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">    <span class="comment"># Add the current number to the &quot;sum&quot; variable</span></span><br><span class="line">    <span class="built_in">sum</span>=$((sum + i))</span><br><span class="line"><span class="keyword">done</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Print the final result</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;The sum of numbers from 1 to 100 is: <span class="variable">$sum</span>&quot;</span></span><br><span class="line"></span><br><span class="line">第1行：<span class="comment">#!/bin/bash 是脚本的第一行，表示这是一个 shell 脚本，并且使用 /bin/bash 来执行。</span></span><br><span class="line"></span><br><span class="line">第3行：初始化变量 <span class="built_in">sum</span> 为 0。</span><br><span class="line"></span><br><span class="line">第5行：使用 <span class="keyword">for</span> 循环迭代变量 i，从 1 到 100。</span><br><span class="line"></span><br><span class="line">第7行：使用 $((sum + i)) 来计算当前的 i 值并将其加到 <span class="built_in">sum</span> 变量中。</span><br><span class="line"></span><br><span class="line">第9行：使用 <span class="built_in">echo</span> 打印出最终结果。</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+# this is a add one to fifty
 
-<p>我自己编写的,已验证正确性</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">#! /bin/bash</span><br><span class="line"></span><br><span class="line"># this is a add one to fifty</span><br><span class="line"></span><br><span class="line">for((i=1;i&lt;=100;i++));</span><br><span class="line">do</span><br><span class="line">SUM=$(expr $SUM + $i)</span><br><span class="line">done</span><br><span class="line"></span><br><span class="line">echo $SUM</span><br></pre></td></tr></table></figure>
+for((i=1;i&lt;=100;i++));
+do
+SUM=$(expr $SUM + $i)
+done
 
-
+echo $SUM
+</code></pre>
 </li>
-<li><p>用shell编程实现在屏幕上输出九九乘法表。</p>
-<p>以下代码是chatgpt给出,未验证正确性</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/bash</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> &#123;1..9&#125;; <span class="keyword">do</span></span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> $(<span class="built_in">seq</span> 1 <span class="variable">$i</span>); <span class="keyword">do</span></span><br><span class="line">        <span class="built_in">echo</span> -n <span class="string">&quot;<span class="variable">$i</span>*<span class="variable">$j</span>=<span class="subst">$((i*j)</span>) &quot;</span></span><br><span class="line">    <span class="keyword">done</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">&quot;&quot;</span></span><br><span class="line"><span class="keyword">done</span></span><br><span class="line"></span><br><span class="line">说明：</span><br><span class="line"></span><br><span class="line"><span class="comment">#!/bin/bash：指定这是一个 bash 脚本</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> &#123;1..9&#125;：循环变量 i 从 1 到 9</span><br><span class="line"><span class="keyword">for</span> j <span class="keyword">in</span> $(<span class="built_in">seq</span> 1 <span class="variable">$i</span>)：循环变量 j 从 1 到 i</span><br><span class="line"><span class="built_in">echo</span> -n <span class="string">&quot;<span class="variable">$i</span>*<span class="variable">$j</span>=<span class="subst">$((i*j)</span>) &quot;</span>：输出乘法结果，-n 选项表示不换行</span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;&quot;</span>：输出换行</span><br><span class="line"></span><br><span class="line">如果要运行这个脚本，需要给它加上可执行权限，并在命令行中执行它，例如：</span><br><span class="line"><span class="built_in">chmod</span> +x script.sh</span><br><span class="line">./script.sh</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>我自己的代码,已验证正确性</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#! /bin/bash</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span>((i=<span class="number">1</span>;i&lt;=<span class="number">9</span>;i++));</span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">  <span class="keyword">for</span>((j=<span class="number">1</span>;j&lt;=i;j++));</span><br><span class="line">  <span class="keyword">do</span></span><br><span class="line">    <span class="built_in">echo</span> -n <span class="string">&quot;<span class="variable">$&#123;j&#125;</span>*<span class="variable">$&#123;i&#125;</span>=<span class="subst">$((i*j)</span>) &quot;</span></span><br><span class="line">  <span class="keyword">done</span></span><br><span class="line">  <span class="built_in">echo</span><span class="string">&quot;&quot;</span> <span class="comment">#输出一行后换行</span></span><br><span class="line"><span class="keyword">done</span></span><br></pre></td></tr></table></figure></li>
+<li>
+<p>用 shell 编程实现在屏幕上输出九九乘法表。</p>
+<p>以下代码是 chatgpt 给出，未验证正确性</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token shebang important">#!/bin/bash</span></pre></td></tr><tr><td data-num="2"></td><td><pre></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token keyword">for</span> <span class="token for-or-select variable">i</span> <span class="token keyword">in</span> <span class="token punctuation">&#123;</span><span class="token number">1</span><span class="token punctuation">..</span><span class="token number">9</span><span class="token punctuation">&#125;</span><span class="token punctuation">;</span> <span class="token keyword">do</span></pre></td></tr><tr><td data-num="4"></td><td><pre>    <span class="token keyword">for</span> <span class="token for-or-select variable">j</span> <span class="token keyword">in</span> <span class="token variable"><span class="token variable">$(</span><span class="token function">seq</span> <span class="token number">1</span> $i<span class="token variable">)</span></span><span class="token punctuation">;</span> <span class="token keyword">do</span></pre></td></tr><tr><td data-num="5"></td><td><pre>        <span class="token builtin class-name">echo</span> <span class="token parameter variable">-n</span> <span class="token string">"<span class="token variable">$i</span>*<span class="token variable">$j</span>=<span class="token variable"><span class="token variable">$((</span>i<span class="token operator">*</span>j<span class="token variable">))</span></span> "</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    <span class="token keyword">done</span></pre></td></tr><tr><td data-num="7"></td><td><pre>    <span class="token builtin class-name">echo</span> <span class="token string">""</span></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token keyword">done</span></pre></td></tr><tr><td data-num="9"></td><td><pre></pre></td></tr><tr><td data-num="10"></td><td><pre>说明：</pre></td></tr><tr><td data-num="11"></td><td><pre></pre></td></tr><tr><td data-num="12"></td><td><pre><span class="token comment">#!/bin/bash：指定这是一个 bash 脚本</span></pre></td></tr><tr><td data-num="13"></td><td><pre><span class="token keyword">for</span> <span class="token for-or-select variable">i</span> <span class="token keyword">in</span> <span class="token punctuation">&#123;</span><span class="token number">1</span><span class="token punctuation">..</span><span class="token number">9</span><span class="token punctuation">&#125;</span>：循环变量 i 从 <span class="token number">1</span> 到 <span class="token number">9</span></pre></td></tr><tr><td data-num="14"></td><td><pre><span class="token keyword">for</span> <span class="token for-or-select variable">j</span> <span class="token keyword">in</span> <span class="token variable"><span class="token variable">$(</span><span class="token function">seq</span> <span class="token number">1</span> $i<span class="token variable">)</span></span>：循环变量 j 从 <span class="token number">1</span> 到 i</pre></td></tr><tr><td data-num="15"></td><td><pre><span class="token builtin class-name">echo</span> <span class="token parameter variable">-n</span> <span class="token string">"<span class="token variable">$i</span>*<span class="token variable">$j</span>=<span class="token variable"><span class="token variable">$((</span>i<span class="token operator">*</span>j<span class="token variable">))</span></span> "</span>：输出乘法结果，-n 选项表示不换行</pre></td></tr><tr><td data-num="16"></td><td><pre><span class="token builtin class-name">echo</span> <span class="token string">""</span>：输出换行</pre></td></tr><tr><td data-num="17"></td><td><pre></pre></td></tr><tr><td data-num="18"></td><td><pre>如果要运行这个脚本，需要给它加上可执行权限，并在命令行中执行它，例如：</pre></td></tr><tr><td data-num="19"></td><td><pre><span class="token function">chmod</span> +x script.sh</pre></td></tr><tr><td data-num="20"></td><td><pre>./script.sh</pre></td></tr></table></figure><p>我自己的代码，已验证正确性</p>
+<figure class="highlight bash"><figcaption data-lang="bash"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token shebang important">#! /bin/bash</span></pre></td></tr><tr><td data-num="2"></td><td><pre></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token keyword">for</span><span class="token variable"><span class="token punctuation">((</span>i<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">&lt;=</span><span class="token number">9</span><span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">))</span></span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token keyword">do</span></pre></td></tr><tr><td data-num="5"></td><td><pre>  <span class="token keyword">for</span><span class="token variable"><span class="token punctuation">((</span>j<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span>j<span class="token operator">&lt;=</span>i<span class="token punctuation">;</span>j<span class="token operator">++</span><span class="token punctuation">))</span></span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="6"></td><td><pre>  <span class="token keyword">do</span></pre></td></tr><tr><td data-num="7"></td><td><pre>    <span class="token builtin class-name">echo</span> <span class="token parameter variable">-n</span> <span class="token string">"<span class="token variable">$&#123;j&#125;</span>*<span class="token variable">$&#123;i&#125;</span>=<span class="token variable"><span class="token variable">$((</span>i<span class="token operator">*</span>j<span class="token variable">))</span></span> "</span></pre></td></tr><tr><td data-num="8"></td><td><pre>  <span class="token keyword">done</span></pre></td></tr><tr><td data-num="9"></td><td><pre>  <span class="token builtin class-name">echo</span><span class="token string">""</span> <span class="token comment">#输出一行后换行</span></pre></td></tr><tr><td data-num="10"></td><td><pre><span class="token keyword">done</span></pre></td></tr></table></figure></li>
 </ol>
 
-    </div>
-    
-    
-    
-    
-    
-    
-    
+      <div class="tags">
+          <a href="/tags/%E5%A4%8D%E4%B9%A0/" rel="tag"><i class="ic i-tag"></i> 复习</a>
+      </div>
+  </div>
+
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">更新于</span>
+    <time title="修改时间：2023-02-09 18:59:43" itemprop="dateModified" datetime="2023-02-09T18:59:43+08:00">2023-02-09</time>
+  </span>
 </div>
 
-                <footer id="footer">
-    <div class="footer-wrap">
-        <div>
-            &copy;
-            2022 - 2023 Hexo
-            <span class="footer-icon">
-                <i class="fa-solid fa-font-awesome fa-fw"></i>
-            </span>
-            &commat;John Doe
-        </div>
-        <div>Based on the <a target="_blank" rel="noopener" href="https://hexo.io">Hexo Engine</a> &amp; <a target="_blank" rel="noopener" href="https://github.com/argvchs/hexo-theme-particlex">ParticleX Theme</a></div>
-        
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> 赞赏</button>
+  <p>请我喝[茶]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="John Doe 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="John Doe 支付宝">
+        <p>支付宝</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/paypal.png" alt="John Doe 贝宝">
+        <p>贝宝</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>Post author： </strong>John Doe <i class="ic i-at"><em>@</em></i>Hexo
+  </li>
+  <li class="link">
+    <strong>Post link：</strong>
+    <a href="http://example.com/2023/02/03/Linux/" title="Linux操作系统期末复习">http://example.com/2023/02/03/Linux/</a>
+  </li>
+  <li class="license">
+    <strong>Copyright Notice： </strong>All articles in this blog are licensed under <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+  </footer>
+
+</article>
+
+  </div>
+  
+
+<div class="post-nav">
+    <div class="item left">
+      
+
+  <a href="/2023/02/02/%E8%BD%AF%E4%BB%B6%E6%96%87%E6%A1%A3%E4%B8%8E%E5%86%99%E4%BD%9C%E5%A4%8D%E4%B9%A0/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicliierfjj20zk0m8npd.jpg" title="软件写作期末复习">
+  <span class="type">上一篇</span>
+  <span class="category"><i class="ic i-flag"></i> 新余学院第一学期复习</span>
+  <h3>软件写作期末复习</h3>
+  </a>
+
     </div>
-</footer>
+    <div class="item right">
+      
 
-            </div>
-            </transition>
-            <div id="showimg">
-                <img id="showimg-content">
-            </div>
+  <a href="/2023/02/06/Hexo%E6%92%AD%E5%AE%A2%E6%90%AD%E5%BB%BA/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva3.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipexe4oykj20zk0m87ji.jpg" title="我的第一篇文章">
+  <span class="type">下一篇</span>
+  <span class="category"><i class="ic i-flag"></i> 教程</span>
+  <h3>我的第一篇文章</h3>
+  </a>
+
+    </div>
+</div>
+
+  
+  <div class="wrap" id="comments"></div>
+
+
         </div>
-        <script src="/js/functions.js"></script>
-<script src="/js/particlex.js"></script>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="文章目录">
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#linux-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0"><span class="toc-number">1.</span> <span class="toc-text"> Linux 操作系统期末复习</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%95%E5%85%83%E4%B8%80-%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AElinux%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F"><span class="toc-number">1.1.</span> <span class="toc-text"> 单元一 	安装与配置 Linux 操作系统</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%80%83%E7%82%B9"><span class="toc-number">1.1.1.</span> <span class="toc-text"> 考点</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-linux%E5%88%9B%E5%A7%8B%E4%BA%BAlinus-torvalds-%E8%8A%AC%E5%85%B0%E4%BA%BA"><span class="toc-number">1.1.1.1.</span> <span class="toc-text"> 1.  Linux 创始人：Linus Torvalds (芬兰人)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-linux-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E4%BC%98%E7%82%B9"><span class="toc-number">1.1.1.2.</span> <span class="toc-text"> 2.  Linux 操作系统的优点</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-linux%E5%8F%91%E5%B1%95%E6%9C%89%E5%87%A0%E5%A4%A7%E6%94%AF%E6%9F%B1"><span class="toc-number">1.1.1.3.</span> <span class="toc-text"> 3.  Linux 发展有几大支柱？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-linux%E7%89%88%E6%9C%AC"><span class="toc-number">1.1.1.4.</span> <span class="toc-text"> 4.  Linux 版本</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-%E5%88%86%E5%8C%BA"><span class="toc-number">1.1.1.5.</span> <span class="toc-text"> 5. 分区</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-%E8%AF%BE%E5%90%8E%E4%B9%A0%E9%A2%98"><span class="toc-number">1.1.1.6.</span> <span class="toc-text"> 6. 课后习题</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%95%E5%85%83%E4%BA%8C%E7%AE%A1%E7%90%86%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F"><span class="toc-number">1.2.</span> <span class="toc-text"> 单元二	管理文件系统</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%80%83%E7%82%B9-2"><span class="toc-number">1.2.1.</span> <span class="toc-text"> 考点：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E7%B1%BB%E5%9E%8B%E8%87%B3%E5%B0%91%E6%8E%8C%E6%8F%A15%E4%B8%AA"><span class="toc-number">1.2.1.1.</span> <span class="toc-text"> 1. 文件系统类型（至少掌握 5 个）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-linux%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84"><span class="toc-number">1.2.1.2.</span> <span class="toc-text"> 2. Linux 文件系统目录结构</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-linux%E9%BB%98%E8%AE%A4%E7%9B%AE%E5%BD%95%E5%8A%9F%E8%83%BD"><span class="toc-number">1.2.1.3.</span> <span class="toc-text"> 3. Linux 默认目录功能</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90%E4%B8%8E%E5%BD%92%E5%B1%9E"><span class="toc-number">1.2.1.4.</span> <span class="toc-text"> 4. 文件权限与归属</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-%E4%BB%80%E4%B9%88%E6%98%AF%E7%A1%AC%E9%93%BE%E6%8E%A5%E4%BB%80%E4%B9%88%E6%98%AF%E8%BD%AF%E9%93%BE%E6%8E%A5"><span class="toc-number">1.2.1.5.</span> <span class="toc-text"> 5. 什么是硬链接，什么是软链接</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-%E6%93%8D%E4%BD%9C%E5%91%BD%E4%BB%A4"><span class="toc-number">1.2.1.6.</span> <span class="toc-text"> 6. 操作命令</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-%E5%8D%95%E5%85%83%E4%BA%8C%E8%AF%BE%E5%90%8E%E4%B9%A0%E9%A2%98"><span class="toc-number">1.2.1.7.</span> <span class="toc-text"> 7. 单元二课后习题</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%95%E5%85%83%E4%B8%89-shell%E4%B8%8E%E6%96%87%E6%9C%AC%E5%A4%84%E7%90%86"><span class="toc-number">1.3.</span> <span class="toc-text"> 单元三 	Shell 与文本处理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%80%83%E7%82%B9-3"><span class="toc-number">1.3.1.</span> <span class="toc-text"> 考点</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-vim-%E7%BC%96%E8%BE%91%E5%99%A8%E6%A8%A1%E5%BC%8F%E7%9A%84%E5%88%87%E6%8D%A2%E6%96%B9%E6%B3%95"><span class="toc-number">1.3.1.1.</span> <span class="toc-text"> 1. vim 编辑器模式的切换方法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E9%87%8D%E5%AE%9A%E5%90%91"><span class="toc-number">1.3.1.2.</span> <span class="toc-text"> 2. 输入输出重定向</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E7%AE%A1%E9%81%93%E5%91%BD%E4%BB%A4%E7%AC%A6"><span class="toc-number">1.3.1.3.</span> <span class="toc-text"> 3. 管道命令符</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%95%E5%85%83%E5%9B%9B-%E7%AE%A1%E7%90%86linux%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E7%94%A8%E6%88%B7-%E7%BB%84%E7%BE%A4%E5%8F%8A%E7%89%B9%E6%AE%8A%E6%9D%83%E9%99%90"><span class="toc-number">1.4.</span> <span class="toc-text"> 单元四 管理 Linux 服务器的用户、组群及特殊权限</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%80%83%E7%82%B9-4"><span class="toc-number">1.4.1.</span> <span class="toc-text"> 考点</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-linux%E7%94%A8%E6%88%B7"><span class="toc-number">1.4.1.1.</span> <span class="toc-text"> 1. Linux 用户</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E7%94%A8%E6%88%B7%E8%B4%A6%E6%88%B7%E6%96%87%E4%BB%B6"><span class="toc-number">1.4.1.2.</span> <span class="toc-text"> 2. 用户账户文件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3%E7%94%A8%E6%88%B7%E8%B4%A6%E6%88%B7%E7%9A%84%E5%88%9B%E5%BB%BA%E5%92%8C%E7%AE%A1%E7%90%86"><span class="toc-number">1.4.1.3.</span> <span class="toc-text"> 3. 用户账户的创建和管理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-%E8%AF%BE%E5%90%8E%E9%A2%98%E5%BF%85%E8%80%83"><span class="toc-number">1.4.1.4.</span> <span class="toc-text"> 4. 课后题 (必考)</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%95%E5%85%83%E4%BA%94-%E7%AE%A1%E7%90%86%E7%A3%81%E7%9B%98"><span class="toc-number">1.5.</span> <span class="toc-text"> 单元五 管理磁盘</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%80%83%E7%82%B9-5"><span class="toc-number">1.5.1.</span> <span class="toc-text"> 考点</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E7%A1%AC%E7%9B%98%E5%88%86%E5%8C%BA%E7%9B%B8%E5%85%B3%E7%9F%A5%E8%AF%86"><span class="toc-number">1.5.1.1.</span> <span class="toc-text"> 1. 硬盘分区相关知识</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-mount%E6%8C%82%E8%BD%BD%E5%88%86%E5%8C%BA"><span class="toc-number">1.5.1.2.</span> <span class="toc-text"> 2. mount 挂载分区</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-umount%E5%8D%B8%E8%BD%BD%E5%91%BD%E4%BB%A4"><span class="toc-number">1.5.1.3.</span> <span class="toc-text"> 3. umount 卸载命令</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%95%E5%85%83%E5%85%AD-%E8%BD%AF%E4%BB%B6%E5%8C%85%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E7%AE%A1%E7%90%86"><span class="toc-number">1.6.</span> <span class="toc-text"> 单元六 软件包的安装与管理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%80%83%E7%82%B9-6"><span class="toc-number">1.6.1.</span> <span class="toc-text"> 考点:</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-rpm%E5%8C%85%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F"><span class="toc-number">1.6.1.1.</span> <span class="toc-text"> 1. RPM 包管理系统</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%95%E5%85%83%E4%B8%83-linux%E7%B3%BB%E7%BB%9F%E7%9B%91%E8%A7%86%E4%B8%8E%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86"><span class="toc-number">1.7.</span> <span class="toc-text"> 单元七 Linux 系统监视与进程管理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%80%83%E7%82%B9-7"><span class="toc-number">1.7.1.</span> <span class="toc-text"> 考点</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-at%E8%B0%83%E5%BA%A6%E5%BF%85%E8%80%83"><span class="toc-number">1.7.1.1.</span> <span class="toc-text"> 1. at 调度 (必考)</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-corn"><span class="toc-number">1.7.1.2.</span> <span class="toc-text"> 2. corn</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E7%9B%91%E8%A7%86%E8%BF%9B%E7%A8%8B"><span class="toc-number">1.7.1.3.</span> <span class="toc-text"> 3. 监视进程</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-%E5%90%AF%E5%8A%A8%E5%88%87%E6%8D%A2%E8%BF%9B%E7%A8%8B%E6%88%96%E4%BD%9C%E4%B8%9A"><span class="toc-number">1.7.1.4.</span> <span class="toc-text"> 4. 启动，切换进程或作业</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%95%E5%85%83%E4%B9%9D-shell%E7%BC%96%E7%A8%8B-shell-script"><span class="toc-number">1.8.</span> <span class="toc-text"> 单元九 Shell 编程 - Shell script</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%80%83%E7%82%B9-8"><span class="toc-number">1.8.1.</span> <span class="toc-text"> 考点</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-shell%E8%84%9A%E6%9C%AC%E7%9A%84%E5%BB%BA%E7%AB%8B%E5%92%8C%E6%89%A7%E8%A1%8C"><span class="toc-number">1.8.1.1.</span> <span class="toc-text"> 1. Shell 脚本的建立和执行</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E6%96%87%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%AC%A6"><span class="toc-number">1.8.1.2.</span> <span class="toc-text"> 2. 文件测试符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-shell%E7%BC%96%E7%A8%8B%E9%A2%98"><span class="toc-number">1.8.1.3.</span> <span class="toc-text"> 3. Shell 编程题</span></a></li></ol></li></ol></li></ol></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="系列文章">
+        <ul>
+          <li><a href="/2023/02/01/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%8E%9F%E7%90%86/" rel="bookmark" title="操作系统原理期末复习">操作系统原理期末复习</a></li><li><a href="/2023/02/02/%E8%BD%AF%E4%BB%B6%E6%96%87%E6%A1%A3%E4%B8%8E%E5%86%99%E4%BD%9C%E5%A4%8D%E4%B9%A0/" rel="bookmark" title="软件写作期末复习">软件写作期末复习</a></li><li class="active"><a href="/2023/02/03/Linux/" rel="bookmark" title="Linux操作系统期末复习">Linux操作系统期末复习</a></li>
+        </ul>
+      </div>
+      <div class="overview panel" data-title="站点概览">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="John Doe"
+      data-src="/images/avatar.jpg">
+  <p class="name" itemprop="name">John Doe</p>
+  <div class="description" itemprop="description"></div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">4</span>
+        <span class="name">文章</span>
+      </a>
+    </div>
+    <div class="item categories">
+      <a href="/categories/">
+        <span class="count">2</span>
+        <span class="name">分类</span>
+      </a>
+    </div>
+    <div class="item tags">
+      <a href="/tags/">
+        <span class="count">2</span>
+        <span class="name">标签</span>
+      </a>
+    </div>
+</nav>
+
+<div class="social">
+</div>
+
+<ul class="menu">
+  
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>首页</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/about/" rel="section"><i class="ic i-user"></i>关于</a>
+  </li>
+
+        
+  <li class="item dropdown">
+      <a href="javascript:void(0);"><i class="ic i-feather"></i>Posts</a>
+    <ul class="submenu">
+
+        
+  <li class="item">
+    <a href="/archives/" rel="section"><i class="ic i-list-alt"></i>Archives</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/categories/" rel="section"><i class="ic i-th"></i>Categories</a>
+  </li>
+
+        
+  <li class="item">
+    <a href="/tags/" rel="section"><i class="ic i-tags"></i>Tags</a>
+  </li>
+
+  </ul>
+    
+  <li class="item">
+    <a href="/friends/" rel="section"><i class="ic i-heart"></i>友達</a>
+  </li>
+
+    
+  <li class="item">
+    <a href="/links/" rel="section"><i class="ic i-magic"></i>链接</a>
+  </li>
+
+
+</ul>
+
+      </div>
+    </div>
+  </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+        <a href="/2023/02/02/%E8%BD%AF%E4%BB%B6%E6%96%87%E6%A1%A3%E4%B8%8E%E5%86%99%E4%BD%9C%E5%A4%8D%E4%B9%A0/" rel="prev" title="上一篇"><i class="ic i-chevron-left"></i></a>
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+        <a href="/2023/02/06/Hexo%E6%92%AD%E5%AE%A2%E6%90%AD%E5%BB%BA/" rel="next" title="下一篇"><i class="ic i-chevron-right"></i></a>
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>随机文章</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E6%95%99%E7%A8%8B/" title="分类于 教程">教程</a>
+</div>
+
+    <span><a href="/2023/02/06/Hexo%E6%92%AD%E5%AE%A2%E6%90%AD%E5%BB%BA/" title="我的第一篇文章">我的第一篇文章</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E6%96%B0%E4%BD%99%E5%AD%A6%E9%99%A2%E7%AC%AC%E4%B8%80%E5%AD%A6%E6%9C%9F%E5%A4%8D%E4%B9%A0/" title="分类于 新余学院第一学期复习">新余学院第一学期复习</a>
+</div>
+
+    <span><a href="/2023/02/01/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%8E%9F%E7%90%86/" title="操作系统原理期末复习">操作系统原理期末复习</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E6%96%B0%E4%BD%99%E5%AD%A6%E9%99%A2%E7%AC%AC%E4%B8%80%E5%AD%A6%E6%9C%9F%E5%A4%8D%E4%B9%A0/" title="分类于 新余学院第一学期复习">新余学院第一学期复习</a>
+</div>
+
+    <span><a href="/2023/02/02/%E8%BD%AF%E4%BB%B6%E6%96%87%E6%A1%A3%E4%B8%8E%E5%86%99%E4%BD%9C%E5%A4%8D%E4%B9%A0/" title="软件写作期末复习">软件写作期末复习</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+<a href="/categories/%E6%96%B0%E4%BD%99%E5%AD%A6%E9%99%A2%E7%AC%AC%E4%B8%80%E5%AD%A6%E6%9C%9F%E5%A4%8D%E4%B9%A0/" title="分类于 新余学院第一学期复习">新余学院第一学期复习</a>
+</div>
+
+    <span><a href="/2023/02/03/Linux/" title="Linux操作系统期末复习">Linux操作系统期末复习</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>最新评论</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2010 – 
+    <span itemprop="copyrightYear">2023</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">John Doe @ Caoy</span>
+  </div>
+  <div class="count">
+    <span class="post-meta-item-icon">
+      <i class="ic i-chart-area"></i>
+    </span>
+    <span title="站点总字数">36k 字</span>
+
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="ic i-coffee"></i>
+    </span>
+    <span title="站点阅读时长">32 分钟</span>
+  </div>
+  <div class="powered-by">
+    基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: '2023/02/03/Linux/',
+    favicon: {
+      show: "（●´3｀●）Goooood",
+      hide: "(´Д｀)Booooom"
+    },
+    search : {
+      placeholder: "文章搜索",
+      empty: "关于 「 ${query} 」，什么也没搜到",
+      stats: "${time} ms 内找到 ${hits} 条结果"
+    },
+    valine: true,fancybox: true,
+    copyright: '复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
 
 
 
 
-
-
-
-    </body>
+</body>
 </html>
