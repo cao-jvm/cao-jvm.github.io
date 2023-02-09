@@ -1,0 +1,429 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>软件写作期末复习 | Hexo</title>
+        <meta name="author" content="John Doe">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+        <link rel="icon" href="/images/avatar.jpg">
+        <script src="https://cdn.staticfile.org/vue/3.2.45/vue.global.prod.min.js"></script>
+        <script src="https://cdn.staticfile.org/highlight.js/11.7.0/highlight.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/11.7.0/styles/github.min.css">
+        <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/6.2.1/css/all.min.css">
+        
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+        
+        
+        
+        <link rel="stylesheet" href="/css/fonts.min.css">
+        <link rel="stylesheet" href="/css/particlex.css">
+    <meta name="generator" content="Hexo 6.3.0"></head>
+    <body>
+        <div id="loading" style="height: 100vh; width: 100vw; left: 0; top: 0; position: fixed; display: flex; z-index: 2147483647; background: #fff; transition: opacity 0.3s ease-out; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; pointer-events: none">
+    <div style="width: 50vmin; height: 50vmin; margin: auto; padding: 50px; border-radius: 50%; display: flex; border: solid 10px #a3ddfb">
+        <div style="margin: auto; text-align: center">
+            <h2>LOADING</h2>
+            <p>加载过慢请开启缓存，浏览器默认开启</p>
+            <img src="/images/loading.gif" style="height: 50px; border-radius: 0">
+        </div>
+    </div>
+</div>
+
+        <div id="layout">
+            <transition name="into">
+            <div id="main" v-show="showpage" style="display: -not-none">
+                <nav id="menu">
+    <div class="desktop-menu">
+        <a class="title" href="/">
+            <span>HEXO</span>
+        </a>
+        
+        <a href="/">
+            <i class="fa-solid fa-house fa-fw"></i>
+            <span>&ensp;Home</span>
+        </a>
+        
+        <a href="/about">
+            <i class="fa-solid fa-id-card fa-fw"></i>
+            <span>&ensp;About</span>
+        </a>
+        
+        <a href="/archives">
+            <i class="fa-solid fa-box-archive fa-fw"></i>
+            <span>&ensp;Archives</span>
+        </a>
+        
+        <a href="/categories">
+            <i class="fa-solid fa-bookmark fa-fw"></i>
+            <span>&ensp;Categories</span>
+        </a>
+        
+        <a href="/tags">
+            <i class="fa-solid fa-tags fa-fw"></i>
+            <span>&ensp;Tags</span>
+        </a>
+        
+    </div>
+    <div :class="&quot;phone-menu &quot; + menushow" id="phone-menu">
+        <div class="curtain" @click="menushow = !menushow" v-show="menushow"></div>
+        <div class="title" @click="menushow = !menushow">
+            <i class="fa-solid fa-bars fa-fw"></i>
+            <span>&emsp;HEXO</span>
+        </div>
+        <transition name="slide">
+        <div class="items" v-show="menushow">
+            
+            <a href="/">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-house fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">Home</div>
+                </div>
+            </a>
+            
+            <a href="/about">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-id-card fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">About</div>
+                </div>
+            </a>
+            
+            <a href="/archives">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-box-archive fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">Archives</div>
+                </div>
+            </a>
+            
+            <a href="/categories">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-bookmark fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">Categories</div>
+                </div>
+            </a>
+            
+            <a href="/tags">
+                <div class="item">
+                    <div style="min-width: 20px; max-width: 50px; width: 10%">
+                        <i class="fa-solid fa-tags fa-fw"></i>
+                    </div>
+                    <div style="min-width: 100px; max-width: 150%; width: 20%">Tags</div>
+                </div>
+            </a>
+            
+        </div>
+        </transition>
+    </div>
+</nav>
+
+                <div class="article">
+    <div>
+        <h1>软件写作期末复习 </h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2023/2/2
+        </span>
+        
+        <span class="category">
+            <a href="/categories/%E6%96%B0%E4%BD%99%E5%AD%A6%E9%99%A2%E7%AC%AC%E4%B8%80%E5%AD%A6%E6%9C%9F%E5%A4%8D%E4%B9%A0/">
+                <span class="icon">
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                </span>
+                新余学院第一学期复习
+            </a>
+        </span>
+        
+        
+        <span class="tags">
+            <span class="icon">
+                <i class="fa-solid fa-tags fa-fw"></i>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/%E5%A4%8D%E4%B9%A0/" style="color: #ffa2c4">复习</a>
+            </span>
+            
+        </span>
+        
+    </div>
+    
+    <div class="content" v-pre>
+        <h1 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h1><h3 id="什么是软件文档"><a href="#什么是软件文档" class="headerlink" title="什么是软件文档"></a>什么是软件文档</h3><ol>
+<li>软件文档描述系统功能，刻画子系统间的相互关系，是为开发者提供的精确、完整的指导资料。软件文档是软件开发者之间的沟通渠道，是具体工作的安排表，是系统的开发标准。</li>
+</ol>
+<h3 id="软件文档的作用"><a href="#软件文档的作用" class="headerlink" title="软件文档的作用"></a>软件文档的作用</h3><ol>
+<li><p>软件文档的本质作用是桥梁、是纽带，连接着软件开发方、管理人员，用户以及计算机，将其构成一个相互影响、相互作用的整体。</p>
+</li>
+<li><p>网上的版本（仅供参考）</p>
+<ul>
+<li>项目管理的依据</li>
+<li>技术交流的语言</li>
+<li>保证项目质量</li>
+<li>培训与维护的资料</li>
+<li>软件维护支持</li>
+<li>记载软件历史的语言</li>
+</ul>
+</li>
+</ol>
+<h3 id="软件文档的分类及作用"><a href="#软件文档的分类及作用" class="headerlink" title="软件文档的分类及作用"></a>软件文档的分类及作用</h3><ul>
+<li>开发文档——描述开发过程本身</li>
+<li>管理文档——记录项目管理的信息</li>
+<li>用户文档——记录用户所需的信息</li>
+</ul>
+<h1 id="第二章——软件文档的写作规范"><a href="#第二章——软件文档的写作规范" class="headerlink" title="第二章——软件文档的写作规范"></a>第二章——软件文档的写作规范</h1><br/>
+
+<h3 id="一个软件项目从立项到结尾共有几个阶段："><a href="#一个软件项目从立项到结尾共有几个阶段：" class="headerlink" title="一个软件项目从立项到结尾共有几个阶段："></a>一个软件项目从立项到结尾共有几个阶段：</h3><ol>
+<li>立项，投标，需求分析，概要设计，详细设计，软件编码，软件测试，维护，验收</li>
+</ol>
+<br/>
+
+<h3 id="名词解析——体系结构，功能模块"><a href="#名词解析——体系结构，功能模块" class="headerlink" title="名词解析——体系结构，功能模块"></a>名词解析——体系结构，功能模块</h3><ul>
+<li>体系结构：是具有一定形式的结构化元素，即构件的集合，包括处理构件、数据构件、和连接构件。</li>
+<li>功能模块：</li>
+</ul>
+<br/>
+
+<br/>
+
+<h1 id="第三章——软件项目立项阶段文档写作案例分析"><a href="#第三章——软件项目立项阶段文档写作案例分析" class="headerlink" title="第三章——软件项目立项阶段文档写作案例分析"></a>第三章——软件项目立项阶段文档写作案例分析</h1><br/>
+
+<h3 id="名词解析——市场风险，技术风险"><a href="#名词解析——市场风险，技术风险" class="headerlink" title="名词解析——市场风险，技术风险"></a>名词解析——市场风险，技术风险</h3><ul>
+<li>市场风险：市场风险是因市场价格变动招致损失的风险</li>
+<li>技术风险：技术风险是指伴随着科学技术的发展、生产方式的改变而产生的威胁人们生产与生活的风险。</li>
+</ul>
+<br/>
+
+<br/>
+
+<h1 id="第四章——需求分析书案例分析"><a href="#第四章——需求分析书案例分析" class="headerlink" title="第四章——需求分析书案例分析"></a>第四章——需求分析书案例分析</h1><br/>
+
+<h3 id="需求分析书是干什么的"><a href="#需求分析书是干什么的" class="headerlink" title="需求分析书是干什么的"></a>需求分析书是干什么的</h3><ul>
+<li>一般是对某个市场或者是客户群来讲的，类似于调研报告，重点是体现出产品要满足哪些功能，哪些是重点、热点。</li>
+</ul>
+<h3 id="需求分析书有哪些功能"><a href="#需求分析书有哪些功能" class="headerlink" title="需求分析书有哪些功能"></a>需求分析书有哪些功能</h3><br/>
+
+<h3 id="名词解析——用例方法，用例规约，IPO图，响应时间，故障处理"><a href="#名词解析——用例方法，用例规约，IPO图，响应时间，故障处理" class="headerlink" title="名词解析——用例方法，用例规约，IPO图，响应时间，故障处理"></a>名词解析——用例方法，用例规约，IPO图，响应时间，故障处理</h3><br/>
+
+<ul>
+<li>用例方法：用例方法主要是用来描述需求的业务流程</li>
+<li>用例规约：用例规约就是以用例方式组织的需求规约，是对用例图的解释说明</li>
+<li>IPO图：IPO图是对每个模块进行详细设计的工具，它是输入加工输出图的简称，它是由美国IBM公司发起并完善起来的一种工具。</li>
+<li>响应时间：指应用执行一个操作所需的时间，包括从发出请求开始到最后收到响应所需要的时间。</li>
+<li>故障处理：是指在故障发生之后，采取措施，使系统尽快恢复正常</li>
+</ul>
+<br/>
+
+<br/>
+
+<h1 id="第五章——需求分析书案例分析二"><a href="#第五章——需求分析书案例分析二" class="headerlink" title="第五章——需求分析书案例分析二"></a>第五章——需求分析书案例分析二</h1><br/>
+
+<br/>
+
+<h3 id="什么是功能需求，包括哪些"><a href="#什么是功能需求，包括哪些" class="headerlink" title="什么是功能需求，包括哪些"></a>什么是功能需求，包括哪些</h3><p>规定开发人员必须在产品中实现的软件功能，用户利用这些功能来完成任务，满足业务需求。</p>
+<p>例如：登录功能，在线播放等用户需要实现的业务</p>
+<h3 id="非功能需求包括哪些"><a href="#非功能需求包括哪些" class="headerlink" title="非功能需求包括哪些"></a>非功能需求包括哪些</h3><ul>
+<li>性能需求——用户在软件响应速度、结果精度、运行时资源消耗量等方面的要求</li>
+<li>可靠性要求——用户在软件失效的频率、严重程度、易恢复性，以及故障可预测性等方面的要求。</li>
+<li>易用性要求——用户在界面的易用性、美观性，以及对面向用户的文档和培训资料等方面的要求。</li>
+<li>运行环境约束——用户对软件系统运行环境的要求。</li>
+<li>外部接口需求——用户对待开发软件系统与其他软件系统或硬件设备之间的接口的要求。</li>
+<li>安全性需求——用户在身份认证、授权控制、私密性等方面的要求。</li>
+<li>可保障性要求——用户在软件可配置性、可扩展性、可维护性、可移植性等方面的要求。</li>
+<li>输入输入需求</li>
+<li>数据管理能力需求</li>
+<li>故障处理需求——一旦运行发生异常应当有信息提示，用户无法进行违规操作</li>
+</ul>
+<br/>
+
+<h3 id="什么是非功能需求（-）"><a href="#什么是非功能需求（-）" class="headerlink" title="什么是非功能需求（*）"></a>什么是非功能需求（*）</h3><p>是指 软件产品 为满足用户业务需求而必须具有且除功能需求以外的特性，包括安全性、可靠性、互操作性、健壮性等。</p>
+<br/>
+
+<h3 id="名词解析——B-x2F-S-C-x2F-S"><a href="#名词解析——B-x2F-S-C-x2F-S" class="headerlink" title="名词解析——B&#x2F;S,C&#x2F;S"></a>名词解析——B&#x2F;S,C&#x2F;S</h3><ul>
+<li><p>B&#x2F;S——浏览器&#x2F;服务端</p>
+<p>优点：不需要更新客户端</p>
+<p>缺点：交互性差，安全性低			</p>
+</li>
+<li><p>C&#x2F;S——客户端&#x2F;服务端</p>
+<p>优点：交互性好，对服务器压力小，安全</p>
+<p>缺点：服务器更新时需同步更新客户端</p>
+</li>
+</ul>
+<br/>
+
+<br/>
+
+<h1 id="第六章——需求分析书案例三"><a href="#第六章——需求分析书案例三" class="headerlink" title="第六章——需求分析书案例三"></a>第六章——需求分析书案例三</h1><h3 id="建设原则有哪些"><a href="#建设原则有哪些" class="headerlink" title="建设原则有哪些"></a>建设原则有哪些</h3><ul>
+<li>先进性</li>
+<li>实用性</li>
+<li>高可靠性</li>
+<li>开放性</li>
+<li>可维护性</li>
+<li>可移植性</li>
+<li>扩展性</li>
+</ul>
+<br/>
+
+<h3 id="名词解释——可移植性，可维护性，扩展性"><a href="#名词解释——可移植性，可维护性，扩展性" class="headerlink" title="名词解释——可移植性，可维护性，扩展性"></a>名词解释——可移植性，可维护性，扩展性</h3><ul>
+<li>可移植性——指与软件从某一环境转移到另一环境下的难易程度</li>
+<li>可维护性——是衡量一个系统的可修复 (恢复)性和可改进性的难易程度。 所谓可修复性是指在系统发生故障后能够排除 (或抑制)故障予以修复，并返回到原来正常运行状态的可能性。</li>
+<li>扩展性——可扩展性是软件拓展系统的能力。 简单地说，可扩展性就是关于如何处理更大规模的业务。</li>
+</ul>
+<br/>
+
+<h1 id="第七章——概要设计书案例分析一"><a href="#第七章——概要设计书案例分析一" class="headerlink" title="第七章——概要设计书案例分析一"></a>第七章——概要设计书案例分析一</h1><br/>
+
+<h3 id="概要设计是干什么的"><a href="#概要设计是干什么的" class="headerlink" title="概要设计是干什么的"></a>概要设计是干什么的</h3><ul>
+<li>概要设计是软件开发中非常重要的一个环节，它决定了软件的整体结构，决定了整个开发过程人员、时间的安排。</li>
+</ul>
+<h3 id="概要设计完成什么样的目标"><a href="#概要设计完成什么样的目标" class="headerlink" title="概要设计完成什么样的目标"></a>概要设计完成什么样的目标</h3><ul>
+<li>在概要设计阶段，需要将软件系统需求转化为未来系统的设计，逐步开发强壮的系统构架，将系统进行合理的子系统，功能的分解</li>
+</ul>
+<br/>
+
+<h3 id="概要设计有个什么样的结果"><a href="#概要设计有个什么样的结果" class="headerlink" title="概要设计有个什么样的结果"></a>概要设计有个什么样的结果</h3><br/>
+
+<br/>
+
+<h3 id="问答题-——健壮性，系统划分的基本原则是什么"><a href="#问答题-——健壮性，系统划分的基本原则是什么" class="headerlink" title="问答题 ——健壮性，系统划分的基本原则是什么"></a>问答题 ——健壮性，系统划分的基本原则是什么</h3><ul>
+<li>健壮性——健壮性具体指的是系统在不正常的输入或不正常的外部环境下仍能表现出正常的程度</li>
+<li>系统划分的基本原则是什么——按照业务闭环进行系统拆分／组织架构划分，实现闭环／高内聚／低耦合，减少沟通成本</li>
+</ul>
+<br/>
+
+<br/>
+
+<h1 id="第九章——概要设计书案例分析三"><a href="#第九章——概要设计书案例分析三" class="headerlink" title="第九章——概要设计书案例分析三"></a>第九章——概要设计书案例分析三</h1><br/>
+
+<h3 id="名词解释——软件生命周期，瀑布模型，螺旋模型"><a href="#名词解释——软件生命周期，瀑布模型，螺旋模型" class="headerlink" title="名词解释——软件生命周期，瀑布模型，螺旋模型"></a>名词解释——软件生命周期，瀑布模型，螺旋模型</h3><ul>
+<li>软件生命周期——软件生命周期 (Software Life Cycle,SLC)是软件的产生直到报废或停止使用的生命周期。. 软件生命周期内有问题定义、 可行性分析 、总体描述、 系统设计 、编码、调试和测试、验收与运行、维护升级到废弃等阶段，也有将以上阶段的活动组合在内的迭代阶段，即迭代作为生命周期的阶段。</li>
+<li>瀑布模型——瀑布模型是将软件生存周期的各项活动规定为按固定顺序而连接的若干阶段工作，形如瀑布流水，最终得到软件产品。</li>
+<li>螺旋模型——螺旋模型是一种演化软件开发过程模型，它兼顾了快速原型的迭代特征以及瀑布模型的系统化与严格监控。</li>
+</ul>
+<br/>
+
+<h1 id="第十章——详细设计书案例分析一"><a href="#第十章——详细设计书案例分析一" class="headerlink" title="第十章——详细设计书案例分析一"></a>第十章——详细设计书案例分析一</h1><br/>
+
+<h3 id="名词解释——算法，N-S图，PAD图"><a href="#名词解释——算法，N-S图，PAD图" class="headerlink" title="名词解释——算法，N-S图，PAD图"></a>名词解释——算法，N-S图，PAD图</h3><ul>
+<li>算法——算法（Algorithm）是指解题方案的准确而完整的描述，是一系列解决问题的清晰指令，算法代表着用系统的方法描述解决问题的策略机制。</li>
+<li>N-S图——N-S图，也被称为盒图或NS图，是结构化编程中的一种可视化建模。</li>
+<li>PAD图——PAD是问题分析图（Problem Analysis Diagram）的英文缩写，是继PFD和N-S图之后，又一种描述详细设计的工具，是软件工程中的分析利器，它用二维数形结构的图表示程序的控制流，展现程序的逻辑结构（或者数据结构）,将这种图转换为程序代码比较容易。</li>
+</ul>
+<h3 id="问答题"><a href="#问答题" class="headerlink" title="问答题"></a>问答题</h3><ul>
+<li><p>详细设计是什么</p>
+<p>在概要设计完成整个系统的宏观设计后，再由详细设计对概要设计中提出的各个功能模块逐个进行详细分析，全面展开。</p>
+</li>
+<li><p>详细设计要详细到什么程度，这样做的目的是什么？</p>
+<p>详细设计要包含所有模块的各方各面的内容，要细致到在编码之前没有任何不确定因素，包括函数名，类名等的命名，各个页面表示项目的属性，长度，特殊的限制，具体的算法也要在此阶段确定。</p>
+<p>目的是为了在编码阶段能将设计结果无歧义的直接转化为某种开发语言；另一方面也是为了以后维护人员在代码维护时能提供实用的帮助，不用在纷繁众多的代码中找不到切入点。</p>
+</li>
+<li><p>通常可以借助哪些形式来描写算法？</p>
+<p>自然语言，流程图，伪代码等</p>
+</li>
+</ul>
+<br/>
+
+<br/>
+
+<h1 id="第十一章——详细设计书案例分析二"><a href="#第十一章——详细设计书案例分析二" class="headerlink" title="第十一章——详细设计书案例分析二"></a>第十一章——详细设计书案例分析二</h1><br/>
+
+<h3 id="详细设计过程工具（选择题）"><a href="#详细设计过程工具（选择题）" class="headerlink" title="详细设计过程工具（选择题）"></a>详细设计过程工具（选择题）</h3><ul>
+<li>流程图</li>
+<li>N-S图</li>
+<li>PAD图</li>
+<li>判定表</li>
+<li>判定树（决策树）</li>
+<li>过程设计语言（PDL）</li>
+</ul>
+<br/>
+
+<h3 id="名词解释——判定表，判定树"><a href="#名词解释——判定表，判定树" class="headerlink" title="名词解释——判定表，判定树"></a>名词解释——判定表，判定树</h3><ul>
+<li>判定表——判定表(Decision table)是另一种表达逻辑判断的工具。 与结构化语言和判断树相比，判断表的优点是能把所有条件组合充分地表达出来；其缺点是判定表的建立过程较烦杂，且表达方式不如前两种简便。 </li>
+<li>判定树——判定树又称决策树，是一种用来表示逻辑判断问题的图形工具，适合描述问题处理中具有多个判断，而且每个决策与若干条件有关。</li>
+</ul>
+<br/>
+
+<br/>
+
+<h1 id="第十二章——软件项目结束阶段文档写作案例分析"><a href="#第十二章——软件项目结束阶段文档写作案例分析" class="headerlink" title="第十二章——软件项目结束阶段文档写作案例分析"></a>第十二章——软件项目结束阶段文档写作案例分析</h1><br/>
+
+<h3 id="什么是功能测试"><a href="#什么是功能测试" class="headerlink" title="什么是功能测试"></a>什么是功能测试</h3><p> 功能测试就是对产品的各功能进行验证，根据功能 测试用例 ，逐项测试，检查产品是否达到用户要求的功能。</p>
+<h3 id="名词解释——黑盒测试，白盒测试"><a href="#名词解释——黑盒测试，白盒测试" class="headerlink" title="名词解释——黑盒测试，白盒测试"></a>名词解释——黑盒测试，白盒测试</h3><ul>
+<li>黑盒测试——黑盒测试也称功能测试，它是通过测试来检测每个功能是否都能正常使用，黑盒测试比较注重软件产品的“功能性需求”。</li>
+<li>白盒测试——白盒测试又称结构测试、透明盒测试、逻辑驱动测试或基于代码的测试。白盒测试是一种测试用例设计方法，盒子指的是被测试的软件，白盒指的是盒子是可视的，即清楚盒子内部的东西以及里面是如何运作的。</li>
+</ul>
+<br/>
+
+<h3 id="问答题-1"><a href="#问答题-1" class="headerlink" title="问答题"></a>问答题</h3><ol>
+<li><p>为什么要进行测试？</p>
+<p>1、发现被测对象与用户需求之间的差异，即缺陷。</p>
+<p>2、通过测试活动发现并解决缺陷，增加人们对软件质量的信心。</p>
+<p>3、通过测试活动了解被测对象的质量状况，为决策提供数据依据。</p>
+<p>4、通过测试活动积累经验，预防缺陷出现，降低产品失败风险。</p>
+</li>
+<li><p>常用的软件测试方法有哪些？</p>
+<ul>
+<li>等价类划分法</li>
+<li>场景法</li>
+<li>边界值分析法</li>
+<li>判定表</li>
+</ul>
+</li>
+</ol>
+
+    </div>
+    
+    
+    
+    
+    
+    
+    
+</div>
+
+                <footer id="footer">
+    <div class="footer-wrap">
+        <div>
+            &copy;
+            2022 - 2023 Hexo
+            <span class="footer-icon">
+                <i class="fa-solid fa-font-awesome fa-fw"></i>
+            </span>
+            &commat;John Doe
+        </div>
+        <div>Based on the <a target="_blank" rel="noopener" href="https://hexo.io">Hexo Engine</a> &amp; <a target="_blank" rel="noopener" href="https://github.com/argvchs/hexo-theme-particlex">ParticleX Theme</a></div>
+        
+    </div>
+</footer>
+
+            </div>
+            </transition>
+            <div id="showimg">
+                <img id="showimg-content">
+            </div>
+        </div>
+        <script src="/js/functions.js"></script>
+<script src="/js/particlex.js"></script>
+
+
+
+
+
+
+
+    </body>
+</html>
